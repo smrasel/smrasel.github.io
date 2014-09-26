@@ -1,0 +1,46 @@
+<div class="container">
+	<div class="row">
+		<div class="span8">
+			<div class="thumb">
+				<%= image1 %>
+			</div>
+			<div class="thumb">
+				<%= image2 %>
+			</div>
+			<div class="thumb">
+				<%= image3 %>
+			</div>
+			<div class="thumb">
+				<%= image4 %>
+			</div>
+			<div class="thumb">
+				<%= image5 %>
+			</div>
+			<div class="thumb">
+				<%= image6 %>
+			</div>
+			<div class="thumb">
+				<%= image7 %>
+			</div>
+			<div id="controls">
+				<a href="/work/" class="back">All Work</a>
+				<a href="<%= prev %>" class="prev">Previous</a>
+				<a href="<%= next %>" class="next">Next</a>
+				
+			</div>
+		</div>
+		<div class="span4 last">
+			<div id="info">
+				<a href="<%= prev %>" class="prev">Previous</a>
+				<a href="<%= next %>" class="next">Next</a>
+				<a href="/work/" class="back">All Work</a>
+				<h1><%= name %></h1>
+				<%= description %>
+				<div class="categories">
+					<h3>What We Did</h3>
+					<h4><%= categories %></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
