@@ -393,7 +393,7 @@ input[type=button] {
   padding: 10px;
 }
 .different {
-  padding: 0 15px;
+  padding: 0 12px;
   border-right: 1px solid #ccc;
   border-left: 1px solid #ccc;
 }
@@ -512,6 +512,9 @@ table {
 .bordered th:nth-of-type(2),
 .bordered td:nth-of-type(2) {
   width: 300px;
+}
+.bordered td {
+  background-color: #fff;
 }
 .btn {
   position: relative;
@@ -1032,11 +1035,16 @@ section article:last-child {
 }
 .no-fund {
   font-size: 14px;
-  color: #f00;
+  color: #676767;
   display: block;
   vertical-align: bottom;
   text-shadow: none;
   padding-top: 5px;
+}
+.no-fund .fakir {
+  font-size: 18px;
+  color: #f00;
+  font-weight: 400;
 }
 .three-sections {
   border: 1px solid #ccc;
@@ -1044,14 +1052,14 @@ section article:last-child {
   margin: 15px 0;
 }
 .three-sections.instructions {
-  background: #f5f5f5;
+  background: #fff;
   padding: 15px;
   border-radius: 0 0 3px 3px;
   overflow: hidden;
 }
 .three-sections.instructions h3 {
   font-size: 28px;
-  border-bottom: 1px solid #999;
+  border-bottom: 3px double #999;
   margin-bottom: 15px;
   padding-bottom: 15px;
   font-weight: 300;
@@ -1060,6 +1068,11 @@ section article:last-child {
 }
 .three-sections.instructions h4 {
   font-size: 22px;
+}
+.three-sections.instructions p {
+  font-size: 14px;
+  line-height: 1.3;
+  color: #676767;
 }
 .three-sections + .three-sections {
   border: none;
@@ -1107,9 +1120,12 @@ section article:last-child {
 }
 .three-sections > div ol li {
   display: inline-block;
-  width: 154px;
+  width: 122px;
   padding: 0 0 10px;
   font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .section-close {
   float: right;
@@ -1153,31 +1169,31 @@ section article:last-child {
   background-color: #008000;
 }
 .pill.win:after {
-  content: "↑ Qualified for Semi-Finals";
+  content: "↑ Qualified for next";
   color: #008000;
   position: absolute;
-  width: 172px;
+  width: 132px;
 }
 .pill.win.semi-finals:after {
   content: "↑ Qualified for Finals";
   width: 140px;
 }
 .pill.win.winner:after {
-  content: "♔ got 1st place. Congratulation";
-  width: 220px;
+  content: "♔ got 1st place.";
+  width: 120px;
 }
 .pill.loss {
   background-color: #f00;
 }
 .pill.loss:after {
-  content: "↓ Not qualified for next round";
+  content: "↓ Not qualified for next";
   color: #f00;
   position: absolute;
-  width: 190px;
+  width: 150px;
 }
 .pill.loss.winner:after {
   content: "♕ got 2nd place";
-  width: 130px;
+  width: 120px;
 }
 .no-touch .hero-section li:hover {
   opacity: 0.8;
@@ -1333,4 +1349,34 @@ section article:last-child {
   margin: 40px 0 20px;
   font-size: 14px;
   color: #676767;
+}
+#site-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+#site-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateZ(0) translateX(0);
+  transform: translateZ(0) translateX(0);
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#site-menu {
+  width: 940px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -940px;
+  background: #f9f9f9;
+  padding: 0 15px 15px;
+  border-right: 1px solid #ccc;
+}
+#site-wrapper.show-nav #site-canvas {
+  -webkit-transform: translateZ(0) translateX(940px);
+  transform: translateZ(0) translateX(940px);
 }
