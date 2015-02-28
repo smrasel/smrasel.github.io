@@ -14,9 +14,9 @@
       <div id="site-canvas">
         <!--header-->
         <div class="header">
-          <a href="index.html" class="logo" title="Hearthstone">Hearthstone Lobby</a>
+          <a href="javascript:;" class="logo" title="Hearthstone">Rektile</a>
           <ul class="primary-nav">
-            <li><a href="Javascript:;" onclick="javascript:openDialog();"><i class="foundicon-lock"></i>Login</a></li>
+            <li class="login"><a href="Javascript:;" ><i class="foundicon-lock"></i>Login</a></li>
             <li><a href="Javascript:;"><i class="foundicon-address-book"></i>Register</a></li>
           </ul>
         </div>
@@ -24,7 +24,7 @@
         <div class="hero-section">
           <ul>
             <li class="explore">
-              <a href="javascript:;">
+              <a href="javascript:;" class="login">
                 <img src="img/blank.png" alt="">
                 <b class="big">Very simple 3 step process ⊂(◉‿◉)つ</b>
                 <div class="over-info">
@@ -412,7 +412,7 @@
           <input type="text" id="email" placeholder="yourname@domain.com" class="form-control"/>
           <label for="password" class="password">Password <span>*</span></label>
           <input type="password" id="password" placeholder="your password here" class="form-control"/>
-          <button onclick="javascript:closeDialog();" class="btn block alizarin-flat-button"><i class="foundicon-address-book"></i> Register</button>
+          <button class="btn register block alizarin-flat-button"><i class="foundicon-address-book"></i> Register</button>
         </fieldset>
         <fieldset>
         </fieldset>
@@ -423,17 +423,15 @@
 
     </aside>
     <div class="avgrund-cover"></div>
-    <script>
-      function openDialog() {
-        Avgrund.show( "#default-popup" );
-      }
-      function closeDialog() {
-        Avgrund.hide();
-      }
-    </script>
+    
     <script type="text/javascript" src="js/avgrund.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script>
+     $(function() {
+      
+     });
+    </script>
 
   </body>
 </html>

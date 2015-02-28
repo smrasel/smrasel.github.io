@@ -550,6 +550,17 @@ table {
   font-size: 20px;
   font-weight: 300;
 }
+.nephritis-flat-button {
+  background: linear-gradient(top, #75b734 0, #47951e 100%);
+  background: -o-linear-gradient(top, #75b734 0, #47951e 100%);
+  background: -ms-linear-gradient(top, #75b734 0, #47951e 100%);
+  background: -moz-linear-gradient(top, #75b734 0, #47951e 100%);
+  background: -webkit-linear-gradient(top, #75b734 0, #47951e 100%);
+  box-shadow: 0 2px 0 #4d4d4d;
+}
+.nephritis-flat-button:hover {
+  background: #47951e;
+}
 .sun-flower-button {
   background: #f1c40f;
   border-bottom: 2px solid #e2b607;
@@ -603,12 +614,6 @@ table {
   border-bottom: 2px solid #28be68;
   -webkit-box-shadow: inset 0 -2px #28be68;
   box-shadow: inset 0 -2px #28be68;
-}
-.nephritis-flat-button {
-  background: #27ae60;
-  border-bottom: 2px solid #219d55;
-  -webkit-box-shadow: inset 0 -2px #219d55;
-  box-shadow: inset 0 -2px #219d55;
 }
 .peter-river-flat-button {
   background: #3498db;
@@ -948,6 +953,13 @@ section article:last-child {
   letter-spacing: 1px;
   color: #f8f8f8;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+.header .logo:after {
+  content: "Advanced Online Battle System";
+  color: #75b734;
+  font-size: 12px;
+  margin-left: 5px;
+  position: absolute;
 }
 .primary-nav {
   float: right;
@@ -1359,10 +1371,29 @@ section article:last-child {
   width: 100%;
   height: 100%;
   position: relative;
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -moz-transform: translateZ(0) translateX(0);
+  -ms-transform: translateZ(0) translateX(0);
+  -o-transform: translateZ(0) translateX(0);
   -webkit-transform: translateZ(0) translateX(0);
   transform: translateZ(0) translateX(0);
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -moz-transition: 300ms ease all;
+  -ms-transition: 300ms ease all;
+  -o-transition: 300ms ease all;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -1379,4 +1410,33 @@ section article:last-child {
 #site-wrapper.show-nav #site-canvas {
   -webkit-transform: translateZ(0) translateX(940px);
   transform: translateZ(0) translateX(940px);
+}
+#deposit-page {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -300px;
+  background: #428bca;
+  padding: 15px;
+}
+.boring #deposit-page {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.boring .show-nav #deposit-page {
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+.boring .show-nav #site-canvas {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
