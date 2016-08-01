@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--
+  runway.moda
+  v1
+  Written by S.M Rasel Mahamud (Creative Director | rasel.me | rasel.rony@sekai-lab-bd.com)
+-->
+<html lang="en" class="no-js">
+<head>
+  <!-- What character encoding are we using? -->
+  <meta charset="UTF-8">
+  <!-- Define the viewport for mobile, disable zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <!-- The title of this page -->
+  <title>Runway.Moda</title>
+  <!-- stylesheets -->
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700,600,300italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/styles.min.css">
+  <script type="text/javascript" src="js/vendor/modernizr-custom.js"></script>
+  <script type="text/javascript" src="js/ejs_0.9_alpha_1_production.js"></script>
+</head>
+<body>
+  <div class="page-wrap">
+    <div id="navigation" class="primary-header navbar" role="navigation"></div>
+    <div id="video" class="hero-area-slider"></div>
+    <div class="ad-placholder"><img src="images/big-hori-ad.png" alt="" /></div>
+    <div class="collections-holder">
+      <h3 class="title">Collections</h3>
+      <div class="primary">
+        <ul>
+          <li>
+            <a href="collections.html" title="Lafayette SUMMER 2015">
+              <img src="images/c1.png" alt="Lafayette SUMMER 2015" />
+              <span class="over-info">Lafayette SUMMER 2015</span>
+            </a>
+          </li>
+          <li>
+            <a href="collections.html" title="Suzy Wong 2015/2016">
+              <img src="images/c2.png" alt="Suzy Wong 2015/2016" />
+              <span class="over-info">Suzy Wong 2015/2016</span>
+            </a>
+          </li>
+          <li>
+            <a href="collections.html" title="YSL Seasons">
+              <img src="images/c3.png" alt="YSL Seasons" />
+              <span class="over-info">YSL Seasons</span>
+            </a>
+          </li>
+          <li>
+            <a href="collections.html" title="Marc Jacobs 15/16">
+              <img src="images/c4.png" alt="Marc Jacobs 15/16" />
+              <span class="over-info">Marc Jacobs 15/16</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="secondary">
+        <ul>
+          <li class="off-mobile">
+            <a href="javascript:;" title="">
+              <img src="images/ad-box.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="collections.html" title="Armani Xchange">
+              <img src="images/c5.png" alt="Armani Xchange" />
+              <span class="over-info">Armani Xchange</span>
+            </a>
+          </li>
+          <li>
+            <a href="collections.html" title="Chanel Summer Splash">
+              <img src="images/c6.png" alt="Chanel Summer Splash" />
+              <span class="over-info">Chanel Summer Splash</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="designers-holder">
+      <h3 class="title">Designers</h3>
+      <h4 class="sub-title">Featured Aug/Sept</h4>
+      <div class="cf"></div>
+      <div id="designers" class="designer-slider"></div>
+    </div>
+    <div class="shows">
+      <h3 class="title">Shows</h3>
+      <h4 class="sub-title">This Season</h4>
+      <ul>
+        <li>
+          <img src="images/shows1.png" alt="" />
+          <span class="over-info">Lafayette SUMMER 2015</span>
+          <a href="video_details.html" class="play-btn" title="Play">Play</a>
+        </li>
+        <li>
+          <img src="images/shows2.png" alt="" />
+          <span class="over-info">Suzy Wong 2015/2016</span>
+          <a href="video_details.html" class="play-btn" title="Play">Play</a>
+        </li>
+        <li>
+          <img src="images/shows3.png" alt="" />
+          <span class="over-info">Marc Jacobs 15/16</span>
+          <a href="video_details.html" class="play-btn" title="Play">Play</a>
+        </li>
+        <li>
+          <img src="images/shows4.png" alt="" />
+          <span class="over-info">YSL Seasons</span>
+          <a href="video_details.html" class="play-btn" title="Play">Play</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id='footer' class="primary-footer template site-footer"></div>
+  <div id="test-popup" class="popup modal-medium mfp-with-anim mfp-hide subscribe-popup"></div>
+  <!-- Essential javascripts -->
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.magnific-popup.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.fitvids1.1.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/vendor/classie.js"></script>
+  <script type='text/javascript'>
+    new EJS({url: 'partials/header-nav.ejs'}).update('navigation', {poo :'ha ha ha'});
+    new EJS({url: 'partials/footer.ejs'}).update('footer', {poo :'ha ha ha'});
+    new EJS({url: 'partials/video.ejs'}).update('video', {poo :'ha ha ha'});
+    new EJS({url: 'partials/designers.ejs'}).update('designers', {poo :'ha ha ha'});
+    new EJS({url: 'partials/modal/subscription.ejs'}).update('test-popup', {poo :'ha ha ha'});
+  </script>
+
+<script type="text/javascript">
+ $(document).ready(function(e) {
+
+    $(".open-popup-link").magnificPopup({
+      type:'inline',
+      midClick: true,
+
+      removalDelay: 500, //delay removal by X to allow out-animation
+      callbacks: {
+        beforeOpen: function() {
+        this.st.mainClass = this.st.el.attr('data-effect');
+        }
+      },
+    });
+    // Dynamically created
+    $('.open-search-popup').magnificPopup({
+      items: {
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+        src: '<div class="popup search-modal">' +
+        '<form action="">' +
+        '<input id="search" type="search" tabindex="1" i18n-values="placeholder:searchButton"  placeholder="Type and enter..." autofocus>' +
+        '<i class="fa fa-fw"></i>' +
+        '<p>You can search by product name, Designer name, collection name. etc.</p>' +
+        '</form>' +
+        '</div>',
+        type: 'inline'
+      },
+      closeBtnInside: true
+    });
+
+    $('.open-search-popup').click(function(){
+      $('#search').focus();
+    });
+
+
+  //  slider
+  $('.bxslider').bxSlider({
+    video: true,
+    useCSS: true,
+    touchEnabled: true,
+    adaptiveHeight: true,
+    pager: false
+  });
+
+  $('.designer').bxSlider({
+    minSlides: 2,
+    maxSlides: 5,
+    slideWidth: 220,
+    slideMargin: 15,
+    pager: false,
+    moveSlides: 1
+  });
+
+  $('.collections').bxSlider({
+    minSlides: 2,
+    maxSlides: 5,
+    slideWidth: 220,
+    slideMargin: 15,
+    pager: false,
+    moveSlides: 1
+  });
+
+  $('.coloctions-slider').bxSlider({
+    mode: 'vertical',
+    slideWidth: 310,
+    slideHeight: 200,
+    minSlides: 5,
+    slideMargin: 12,
+    pager: false,
+    moveSlides: 1
+  });
+
+ });
+
+</script>
+
+
+
+ </body>
+ </html>

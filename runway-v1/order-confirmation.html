@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--
+  runway.moda
+  v1
+  Written by S.M Rasel Mahamud (Creative Director | rasel.me | rasel.rony@sekai-lab-bd.com)
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Runway</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700,600,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script type="text/javascript" src="js/vendor/modernizr-custom.js"></script>
+    <script type="text/javascript" src="js/ejs_0.9_alpha_1_production.js"></script>
+  </head>
+<body>
+
+  <div class="page-wrap">
+    <div id="navigation" class="primary-header navbar" role="navigation"></div>
+    <div class="cart-page">
+      <div class="header-padding">
+        <div class="your-cart-at-aglance currency">
+          <select class="select-currency">
+            <option value="">Currency USD</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="elarge">Extra large</option>
+          </select>
+          <span>$6,300</span>
+        </div>
+        <div class="cf">
+          <h3 class="title">Order Confirmation</h3>
+        </div>
+      </div>
+      <div class="body-padding">
+        <div class="header cf">
+          <span>Please check your items and shipping/billing addresses.</span>
+          <div class="fright">
+            <a href="cart.html" class="custom-btn cart-btn outline"><i class="fa fa-fw"></i> Back</a>
+            <a href="#payment-method-popup" data-effect="mfp-zoom-in" class="custom-btn cart-btn btn open-payment-method">Place Order</a>
+          </div>
+        </div>
+        <div class="table-row cf">
+          <div class="table-row-col">
+            <h5>Product</h5>
+            <span>Jordanian stripped calypso Light Blue-Gary - US 3</span>
+            <span>Jordanian stripped calypso Light Blue-Gary - US 3</span>
+            <span>Jordanian stripped calypso Light Blue-Gary - US 3</span>
+          </div>
+          <div class="table-row-col">
+            <h5>Quantity</h5>
+            <span>1</span>
+            <span>1</span>
+            <span>1</span>
+          </div>
+          <div class="table-row-col">
+            <h5>Total</h5>
+            <span>$2,300</span>
+            <span>$2,300</span>
+            <span>$2,300</span>
+          </div>
+        </div>
+
+        <footer class="cf">
+          <a href="#login-popup" data-effect="mfp-zoom-in" class="custom-btn cart-btn default open-login-popup">edit items</a>
+        </footer>
+
+        <div class="table-row cf">
+          <div class="table-row-col column">
+            <h5>Billing and Delivery Address</h5>
+            <address>
+              <span>Mohamad Ali Hanafiah Abdul Wahap</span>
+              <span>Blk 876, Tampines St84 #02-22, Singapore, 520876</span>
+            </address>
+            <address>
+              <span>Ali Hanafiah</span>
+              <span>38 Maxwell Road # 03-01, Singapore, 069116</span>
+            </address>
+          </div>
+          <div class="table-row-col column">
+            <h5>Billing</h5>
+            <address>
+              <input type="radio" name="address1" value="billing" id="billing">
+            </address>
+            <address>
+              <input type="radio" name="address2" value="billing" id="billing">
+            </address>
+          </div>
+          <div class="table-row-col column">
+            <h5>Delivery</h5>
+            <address>
+              <input type="radio" name="address1" value="delivery" id="delivery">
+            </address>
+            <address>
+              <input type="radio" name="address2" value="delivery" id="delivery">
+            </address>
+          </div>
+        </div>
+
+        <footer class="cf">
+          <a href="#address-modal-popup" data-effect="mfp-zoom-in" class="custom-btn cart-btn default addressmodal">Change address</a>
+        </footer>
+
+        <div class="table-row shipping cf">
+          <div class="table-row-col">
+            <h5>Shipping method</h5>
+            <span>Standard Delivery - 2 weeks after confirmation (week of 21 October)</span>
+          </div>
+          <div class="table-row-col">
+            <h5>Price</h5>
+            <span>S$75.00</span>
+          </div>
+        </div>
+
+        <footer class="cf">
+          <a href="#" class="custom-btn cart-btn default">Change shipping method</a>
+          <a href="#" class="custom-btn cart-btn btn fright">Place Order</a>
+        </footer>
+
+
+        <div class="total-block cf">
+          <div class="fleft">
+            <img src="images/support-card.png" alt="" />
+          </div>
+          <div class="fright">
+            <div class="sub-total cf">
+              <span>Sub-Total:</span>
+              <span>$6,300.00</span>
+            </div>
+            <div class="shipping-select cf">
+              <span>Shipping</span>
+              <span>$78.00</span>
+            </div>
+            <div class="total cf">
+              <span>Total:</span>
+              <span>$0.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='footer' class="primary-footer template site-footer"></div>
+  <div id="test-popup" class="popup modal-medium mfp-with-anim mfp-hide subscribe-popup"></div>
+  <div id="add-address-popup" class="popup mfp-with-anim mfp-hide add-address"></div>
+  <div id="address-modal-popup" class="popup mfp-with-anim mfp-hide show-address"></div>
+  <div id="payment-method-popup" class="popup mfp-with-anim mfp-hide payment-method"></div>
+  <div id="login-popup" class="popup modal-large mfp-with-anim mfp-hide login-modal-window"></div>
+
+  <!-- Essential javascripts -->
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.magnific-popup.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.fitvids1.1.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/vendor/classie.js"></script>
+
+<script type='text/javascript'>
+  new EJS({url: 'partials/header-nav.ejs'}).update('navigation', {poo :'ha ha ha'});
+  new EJS({url: 'partials/footer.ejs'}).update('footer', {poo :'ha ha ha'});
+  new EJS({url: 'partials/modal/subscription.ejs'}).update('test-popup', {poo :'ha ha ha'});
+  new EJS({url: 'partials/modal/add-address.ejs'}).update('add-address-popup', {poo :'ha ha ha'});
+  new EJS({url: 'partials/modal/address-book.ejs'}).update('address-modal-popup', {poo :'ha ha ha'});
+  new EJS({url: 'partials/modal/payment-method.ejs'}).update('payment-method-popup', {poo :'ha ha ha'});
+  new EJS({url: 'partials/modal/login.ejs'}).update('login-popup', {poo :'ha ha ha'});
+</script>
+
+<script type="text/javascript">
+
+equalheight = function(container){
+
+var currentTallest = 0,
+     currentRowStart = 0,
+     rowDivs = new Array(),
+     $el,
+     topPosition = 0;
+ $(container).each(function() {
+
+   $el = $(this);
+   $($el).height('auto')
+   topPostion = $el.position().top;
+
+   if (currentRowStart != topPostion) {
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+       rowDivs[currentDiv].height(currentTallest);
+     }
+     rowDivs.length = 0; // empty the array
+     currentRowStart = topPostion;
+     currentTallest = $el.height();
+     rowDivs.push($el);
+   } else {
+     rowDivs.push($el);
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+  }
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+     rowDivs[currentDiv].height(currentTallest);
+   }
+ });
+}
+
+$(window).load(function() {
+  equalheight('.column');
+});
+
+
+$(window).resize(function(){
+  equalheight('.column');
+});
+
+
+ $(document).ready(function(e) {
+
+  // accordian
+
+  $('.adCntnr div.acco2:eq(0)').find('div.expand:eq(0)').addClass('openAd').end() /*find the first child and opended by default, and add class openAd*/
+  .find('div.collapse:gt(0)').hide().end()
+  .find('div.expand').click(function() {
+    $(this).toggleClass('openAd').siblings().removeClass('openAd').end()
+    .next('div.collapse').slideToggle().siblings('div.collapse:visible').slideUp();
+    return false;
+  });
+
+  $(".open-popup-link, .create-address, .addressmodal, .open-payment-method, .open-login-popup").magnificPopup({
+    type:'inline',
+    midClick: true,
+      removalDelay: 500, //delay removal by X to allow out-animation
+      callbacks: {
+        beforeOpen: function() {
+          this.st.mainClass = this.st.el.attr('data-effect');
+        }
+      },
+    });
+
+    // Dynamically created
+    $('.open-search-popup').magnificPopup({
+      items: {
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+        src: '<div class="popup search-modal">' +
+        '<form action="">' +
+        '<input id="search" type="search" tabindex="1" i18n-values="placeholder:searchButton"  placeholder="Type and enter..." autofocus>' +
+        '<i class="fa fa-fw"></i>' +
+        '<p>You can search by product name, Designer name, collection name. etc.</p>' +
+        '</form>' +
+        '</div>',
+        type: 'inline'
+      },
+      closeBtnInside: true
+    });
+
+/*showViewportSize();
+
+$(window).resize(function(e) {
+   showViewportSize();
+ });
+ function showViewportSize() {
+   var the_width = $(window).width();
+   var the_height = $(window).height();
+   $('#width').text(the_width);
+   $('#height').text(the_height);
+ }*/
+
+ });
+
+</script>
+
+ </body>
+ </html>

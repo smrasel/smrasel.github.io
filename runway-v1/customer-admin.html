@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--
+  runway.moda
+  v1
+  Written by S.M Rasel Mahamud (Creative Director | rasel.me | rasel.rony@sekai-lab-bd.com)
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <title>Runway</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700,600,300italic' rel='stylesheet'
+        type='text/css'>
+  <link rel="stylesheet" href="css/styles.min.css">
+  <script type="text/javascript" src="js/vendor/modernizr-custom.js"></script>
+  <script type="text/javascript" src="js/ejs_0.9_alpha_1_production.js"></script>
+</head>
+<body>
+<div class="global-message-placeholder success none">
+  <a href="javascript:" class="close">×</a>
+
+  <div class="message-body">
+    <p class="none">We use cookies on this website. By using this site, you agree that we may store and access cookies
+      on your device. Find out more and set your preferences
+      <a href="javascript:">here</a></p>
+
+    <p><strong>Instructions sent!</strong> Instructions for accessing your account have been sent to <strong>your_email_address@domain_name.com</strong>
+      please check!</p>
+  </div>
+</div>
+<div class="page-wrap">
+  <div class="primary-header navbar" role="navigation">
+    <div class="container-fluid header-bg">
+      <nav>
+        <h1><a href="index.html" class="replace">Runway</a></h1>
+          <span role="primary-nav">
+            <a href="from_run_way.html" class="item">From the run way</a>
+            <a href="collections.html" class="item">Collections</a>
+            <a href="designers.html" class="item">Designers</a>
+            <a href="shows.html" class="item">Shows</a>
+          </span>
+          <span role="secondary-nav">
+            <a href="javascript:" class="item menu-button search open-search-popup" title="Search">Search <i
+              class="fa fa-search"></i></a>
+            <a href="wishlist.html" class="item">Wishlist <span>( 0 )</span></a>
+            <a href="cart.html" class="item">Selection <span>( 0 )</span></a>
+            <a href="javascript:" data-jq-dropdown="#jq-dropdown-1" class="item" title="Rasel Mahamud">
+              <span>Welcome</span> <img class="avatar medium notresponsive"
+                                        src="https://tky-chat-work-appdata.s3.amazonaws.com/avatar/833/833067.rsz.jpg"/>
+            </a>
+          </span>
+      </nav>
+    </div>
+  </div>
+  <div class="customer-admin-page">
+    <div class="colmask leftmenu">
+      <div class="colright">
+        <div class="col1wrap">
+          <div class="col1">
+            <div class="column">
+              <h3 class="headline">Profile settings</h3>
+              <form action="" method="post">
+                <div class="field--wrapper">
+                  <label for="customerFirstName">First Name</label>
+                  <input type="text" id="customerFirstName" placeholder="Your first name ...( mandatory field )" autofocus value="" required/>
+                </div>
+                <div class="field--wrapper">
+                  <label for="customerMiddleName">Middle Name</label>
+                  <input type="text" id="customerMiddleName" placeholder="Your middle name ..." />
+                </div>
+                <div class="field--wrapper">
+                  <label for="customerLastName">Last Name</label>
+                  <input type="text" id="customerLastName" placeholder="Your last name ..." value="" required/>
+                </div>
+                <div class="field--wrapper">
+                  <label for="customerEmail">Email address</label>
+                  <input type="email" id="customerEmail" placeholder="Your email address ( mandatory field )" value="" required/>
+                </div>
+
+                <div class="cf">
+                  <fieldset>
+                    <legend>Contact Details</legend>
+                    <div class="field--wrapper">
+                      <label for="customerMobile">Mobile Number</label>
+                      <input type="text" id="customerMobile" onkeypress="return isNumberKey(event)" name="Phone number" placeholder="Your mobile number" value=""/>
+                    </div>
+                    <div class="field--wrapper">
+                      <label for="customerTelephone">Telephone Number</label>
+                      <input type="text" id="customerTelephone" onkeypress="return isNumberKey(event)" placeholder="Your telephone number" value=""/>
+                    </div>
+                    <div class="field--wrapper">
+                      <label for="customerOfficephone">Office Number</label>
+                      <input type="text" id="customerOfficephone" onkeypress="return isNumberKey(event)" placeholder="Your Office phone number" value=""/>
+                    </div>
+                  </fieldset>
+
+                  <fieldset>
+                    <legend>Password setting</legend>
+                    <div class="field--wrapper">
+                      <label for="customerOldpass">Old password</label>
+                      <input type="password" id="customerOldpass" placeholder="Your old password here"/>
+                    </div>
+                    <div class="field--wrapper">
+                      <label for="customerNewpass">New password</label>
+                      <input type="password" id="customerNewpass" placeholder="Your new password here"/>
+                    </div>
+                    <div class="field--wrapper">
+                      <label for="customerConfirmpass">Retype New Password</label>
+                      <input type="password" id="customerConfirmpass" placeholder="Retype your new password here"/>
+                    </div>
+                  </fieldset>
+                </div>
+                <input type="submit" name="submit" id="submit" class="custom-btn btn-pink disabled" value="Save profile settings!">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="column">
+            <ul>
+              <li><a href="javascript:">Recently Viewed</a></li>
+              <li><a href="javascript:">Favorite Designers</a></li>
+              <li><a href="javascript:">Order History</a></li>
+              <li><a href="javascript:">Message</a></li>
+              <li><a href="address-management.html">Address Management</a></li>
+              <li><a href="javascript:">Refund Management</a></li>
+              <li class="jq-dropdown-divider"></li>
+              <li><a href="javascript:" class="active">Profile Settings</a></li>
+              <li><a href="javascript:">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id='footer' class="primary-footer template site-footer"></div>
+<div id="test-popup" class="popup modal-medium mfp-with-anim mfp-hide subscribe-popup"></div>
+<div id="add-address-popup" class="popup mfp-with-anim mfp-hide add-address"></div>
+<div id="address-modal-popup" class="popup mfp-with-anim mfp-hide show-address"></div>
+<div id="payment-method-popup" class="popup mfp-with-anim mfp-hide payment-method"></div>
+<div id="login-popup" class="popup modal-large mfp-with-anim mfp-hide login-modal-window"></div>
+
+<div id="jq-dropdown-1" class="jq-dropdown jq-dropdown-tip jq-dropdown-anchor-right">
+  <ul class="jq-dropdown-menu">
+    <li><a href="javascript:">Recently Viewed</a></li>
+    <li><a href="javascript:">Favorite Designers</a></li>
+    <li><a href="javascript:">Order History</a></li>
+    <li><a href="javascript:">Message</a></li>
+    <li><a href="address-management.html">Address Management</a></li>
+    <li><a href="javascript:">Refund Management</a></li>
+    <li class="jq-dropdown-divider"></li>
+    <li><a href="javascript:;">Profile Settings</a></li>
+    <li><a href="javascript:">Logout</a></li>
+  </ul>
+</div>
+
+<!-- Essential javascripts -->
+<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="js/vendor/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/vendor/jquery.fitvids1.1.js"></script>
+<script type="text/javascript" src="js/vendor/jquery.bxslider.js"></script>
+<script type="text/javascript" src="js/vendor/classie.js"></script>
+<script type="text/javascript" src="js/vendor/jquery.dropdown.min.js"></script>
+
+<script type='text/javascript'>
+  new EJS({url: 'partials/footer.ejs'}).update('footer', {poo: 'ha ha ha'});
+  new EJS({url: 'partials/modal/subscription.ejs'}).update('test-popup', {poo: 'ha ha ha'});
+  new EJS({url: 'partials/modal/add-address.ejs'}).update('add-address-popup', {poo: 'ha ha ha'});
+  new EJS({url: 'partials/modal/address-book.ejs'}).update('address-modal-popup', {poo: 'ha ha ha'});
+  new EJS({url: 'partials/modal/payment-method.ejs'}).update('payment-method-popup', {poo: 'ha ha ha'});
+  new EJS({url: 'partials/modal/login.ejs'}).update('login-popup', {poo: 'ha ha ha'});
+</script>
+
+<script type="text/javascript">
+
+  function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+      return false;
+    return true;
+  }
+
+  var equalheight = function (container) {
+
+    var currentTallest = 0,
+      currentRowStart = 0,
+      rowDivs = [],
+      $el,
+      topPosition = 0;
+    $(container).each(function () {
+
+      $el = $(this);
+      $($el).height('auto');
+      var topPostion = $el.position().top;
+
+      if (currentRowStart != topPostion) {
+        for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+          rowDivs[currentDiv].height(currentTallest);
+        }
+        rowDivs.length = 0; // empty the array
+        currentRowStart = topPostion;
+        currentTallest = $el.height();
+        rowDivs.push($el);
+      } else {
+        rowDivs.push($el);
+        currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+      }
+      for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+        rowDivs[currentDiv].height(currentTallest);
+      }
+    });
+  };
+
+  $(window).load(function () {
+    equalheight('.column');
+  });
+
+
+  $(window).resize(function () {
+    equalheight('.column');
+  });
+
+
+  $(document).ready(function (e) {
+
+    // nice form
+    var onClass = "on";
+    var showClass = "show";
+
+    $("input").bind("checkval", function () {
+      var label = $(this).prev("label");
+      if (this.value !== "") {
+        label.addClass(showClass);
+      } else {
+        label.removeClass(showClass);
+      }
+    }).on("keyup", function () {
+      $(this).trigger("checkval");
+    }).on("focus", function () {
+      $(this).prev("label").addClass(onClass);
+    }).on("blur", function () {
+      $(this).prev("label").removeClass(onClass);
+    }).trigger("checkval");
+
+
+    //  dropdown
+    $('#jq-dropdown-id-1').on('show', function (event, dropdownData) {
+      console.log(dropdownData);
+    }).on('hide', function (event, dropdownData) {
+      console.log(dropdownData);
+    });
+
+
+    // accordian
+    $('.adCntnr div.acco2:eq(0)').find('div.expand:eq(0)').addClass('openAd').end()/*find the first child and opended by default, and add class openAd*/
+      .find('div.collapse:gt(0)').hide().end()
+      .find('div.expand').click(function () {
+        $(this).toggleClass('openAd').siblings().removeClass('openAd').end()
+          .next('div.collapse').slideToggle().siblings('div.collapse:visible').slideUp();
+        return false;
+      });
+
+    $(".open-popup-link, .create-address, .addressmodal, .open-payment-method, .open-login-popup").magnificPopup({
+      type: 'inline',
+      midClick: true,
+      removalDelay: 500, //delay removal by X to allow out-animation
+      callbacks: {
+        beforeOpen: function () {
+          this.st.mainClass = this.st.el.attr('data-effect');
+        }
+      }
+    });
+
+    // Dynamically created
+    $('.open-search-popup').magnificPopup({
+      items: {
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+        src: '<div class="popup search-modal">' +
+        '<form action="">' +
+        '<input id="search" type="search" tabindex="1" i18n-values="placeholder:searchButton"  placeholder="Type and enter..." autofocus>' +
+        '<i class="fa fa-fw"></i>' +
+        '<p>You can search by product name, Designer name, collection name. etc.</p>' +
+        '</form>' +
+        '</div>',
+        type: 'inline'
+      },
+      closeBtnInside: true
+    });
+
+
+    /*showViewportSize();
+
+     $(window).resize(function(e) {
+     showViewportSize();
+     });
+     function showViewportSize() {
+     var the_width = $(window).width();
+     var the_height = $(window).height();
+     $('#width').text(the_width);
+     $('#height').text(the_height);
+     }*/
+
+  });
+
+</script>
+
+</body>
+</html>
