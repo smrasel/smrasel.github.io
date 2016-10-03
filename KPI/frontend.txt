@@ -110,3 +110,10 @@ stand out from others in the market.
 	11.a	Image authoring tools (able to crop, resize, or perform small adjustments on an image)Familiarity with tools such as Gimp or Photoshop
 	11.b	Terminal unix command
 	11.c	Experience on Windows, Mac (not mandatory) and Linux(must)
+
+
+Created by :
+S M RASEL MAHAMUD RONY
++8801716634698
+
+Monday, October, 2016
