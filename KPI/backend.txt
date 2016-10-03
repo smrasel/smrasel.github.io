@@ -4,9 +4,11 @@ Back End Developer KPI in details for achieve long term career goal:
 Please be noted that it’s not mandatory or obvious that you need to learn all the
 mentioned Technology but choose one and learn that one perfectly align with official project
 
-In your case it would be Php but you are always welcome to learn new one which make you 
+In your (Jitu) case it would be Php but you are always welcome to learn new one which make you 
 standout from others in the market.
 
+
+Anyone who has interest on Backend can follow this syllabus to be a great Backend engineer.
 
 
 
@@ -63,3 +65,9 @@ standout from others in the market.
 	> Docker + Vagrant (local environment development) not mandatory 
 
 
+
+Created by :
+S M RASEL MAHAMUD RONY
++8801716634698
+
+Monday, October, 2016
