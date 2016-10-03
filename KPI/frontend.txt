@@ -18,7 +18,6 @@ stand out from others in the market.
 
 
 
-
 1. CSS Tools and Skills:
 	
 	1.a	CSS animation
