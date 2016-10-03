@@ -1,0 +1,65 @@
+Back End Developer KPI in details for achieve long term career goal:
+====================================================================
+
+Please be noted that it’s not mandatory or obvious that you need to learn all the
+mentioned Technology but choose one and learn that one perfectly align with official project
+
+In your case it would be Php but you are always welcome to learn new one which make you 
+standout from others in the market.
+
+
+
+
+1. Learn Something for Fun.
+	
+	1.a	Elixir (Erlang VM)
+	1.b	Haskell
+	1.c	Rust (new low-level)
+	1.d	Clojure (functional programming)
+
+
+2. Unit/Functional Testing for Chosen Technology
+	- C# (.net)
+	- Python (Django)
+	- Java (Spring, Grails, Play)
+	- Scala
+	- GoLang
+	- PHP (Laravel, Lumen, Nette, CodeIgniter, PHPixie)
+	- Node.js (Express.js / Hapi.js / Koa.js / Sails.js)
+	- Ruby (Ruby on Rails, Sinatra)
+
+3. Database
+	11.a	MySQL
+	11.b	RethinkDB
+	11.c	PostgreSQL
+	11.d	MongoDB
+	11.e	Cassandra
+	11.f	ElasticSearch
+	11.g	Redis / sessions / caching
+
+	Caching :
+	Nginx (Server) https://www.youtube.com/watch?v=FJrs0Ar9asY&index=7&list=PLoYCgNOIyGAApoDfJHjmMgGNlYenKg5jO
+	Apache (Server)
+	Database (Redis)
+	In-Memory
+
+4. Caching:
+	>> memcache 
+	>> Redis
+
+5. Distributed messaging system:	
+	>> RabbitMQ
+	>> ZeroMQ
+	>> Kafka
+
+6. Things to Learn :
+
+	- API's / RESTful Services
+	- Security
+	- Authorization/Authentication > OAUTH & JSON WebToken
+	- Websockets
+	- Microservices
+	- Deploying your app
+	> Docker + Vagrant (local environment development) not mandatory 
+
+

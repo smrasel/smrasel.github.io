@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <title>Amazon Latest Project</title>
     <style>
+        
+        html {
+            overflow-y: scroll;
+            box-sizing: border-box;
+            font-family: 'Noto Serif', serif;
+            line-height: 30px;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
         body {
             background-color: rgba(242,242,242,1);
             color: rgba(0,0,0,1);
@@ -24,8 +35,43 @@
         }
 
     </style>
+    <link href="css/nav.css" rel="stylesheet">
 </head>
 <body>
+
+
+<nav class=global-header>
+  <div class=logo-holder><a href="/" class=logo-link>amazon</a></div>
+  <a href="javascript:;" class="hamburger mobile-nav-trigger visible-sm visible-xs"><span><span>×</span></span></a> <a href="javascript:;" class="hamburger desktop-nav-trigger hidden-xs hidden-sm"><span><span>×</span></span></a>
+</nav>
+<nav class="second-row-header hidden-xs hidden-sm">
+  <div>
+    <ul>
+      <li id=gh-home><a href="/">Home</a></li>
+      <li id=gh-company class=has-submenu>
+        <a>Company<i class="fa fa-angle-down"></i></a>
+        <ul>
+          <li><a href=/about>About</a></li>
+          <li><a href=/press>Press</a></li>
+          <li><a href=http://blog.kiosked.com>Blog</a></li>
+          <li><a href=/team>Team</a></li>
+          <li><a href=/team#careers>Careers</a></li>
+        </ul>
+      </li>
+      <li id=gh-publishers class=has-submenu>
+        <a>Publishers<i class="fa fa-angle-down"></i></a>
+        <ul>
+          <li><a href=/publishers>Overview</a></li>
+          <li><a href=/saas-platform>SaaS Platform</a></li>
+        </ul>
+      </li>
+      <li id=gh-advertisers><a href=/advertisers>Advertisers</a></li>
+      <li id=gh-demo-center><a href=/demo-center>Demo Center</a></li>
+      <li id=gh-resourcesr><a href=/resources>Resources</a></li>
+    </ul>
+  </div>
+</nav>
+
     <div class="wrapper">
         <h2>Amazon latest project</h2>
         <img src="images/amazon.jpg" alt="" >
@@ -34,5 +80,78 @@
         <br>
         <img src="images/amazon_car_parking_model.jpg" alt="">
     </div>
+
+
+
+
+
+    <div class="sidebar-nav hidden-md">
+        <ul>
+            <li>
+                <a href="/" class=side-menu-link id=home-link>Home</a>
+            </li>
+            <li class=has-submenu>
+                <a class=side-menu-link id=company-link>Company
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <ul>
+                    <li>
+                        <a href=/about class=side-menu-link id=about-link>About</a>
+                    </li>
+                    <li>
+                        <a href=/press class=side-menu-link id=press-link>Press</a>
+                    </li>
+                    <li>
+                        <a href=http://blog.kiosked.com class=side-menu-link id=blog-link>Blog</a>
+                    </li>
+                    <li>
+                        <a href=/team class=side-menu-link id=team-link>Team</a>
+                    </li>
+                    <li>
+                        <a href=/team#careers class=side-menu-link id=careers-link>Careers</a>
+                    </li>
+                </ul>
+            </li>
+            <li class=has-submenu>
+                <a class=side-menu-link id=publishers-link>Publishers
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <ul>
+                    <li>
+                        <a href=/publishers class=side-menu-link>Overview</a>
+                    </li>
+                    <li>
+                        <a href=/saas-platform class=side-menu-link>SaaS Platform</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href=/advertisers class=side-menu-link id=advertisers-link>Advertisers</a>
+            </li>
+            <li class=hidden-xs>
+                <a href=/demo-center class=side-menu-link id=demo-center-link>Demo Center</a>
+            </li>
+            <li class=hidden-xs>
+                <a href=/resources class=side-menu-link id=demo-center-link>Resources</a>
+            </li>
+            <li class="hidden-sm has-submenu">
+                <a>Demo Center
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <ul>
+                    <li>
+                        <a href=http://demoapp.kiosked.com class=side-menu-link>View the Demo Center</a>
+                    </li>
+                    <li>
+                        <a href=http://demoapp.kiosked.com/#/resources class=side-menu-link>Resources</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script type="text/javascript" charset="utf-8" src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        
+    <script type="text/javascript" charset="utf-8" src=js/nav.js></script>
 </body>
 </html>
