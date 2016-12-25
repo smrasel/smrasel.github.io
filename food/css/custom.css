@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/* YOUR CUSTOM CSS */
+
+.btn.btn-submit + .text-center {
+  padding-top: 15px;
+}
+
+
+
+.btn.btn-facebook {
+  color: #fff;
+  background-color: #3b5998 !important;
+  border-color: rgba(0,0,0,0.2) !important;
+}
+
+.btn.btn-facebook:hover {
+  background-color: #2d4373 !important;
+  border-color: rgba(0,0,0,0.2) !important;
+}
+
+.subtitle {
+  margin: 2em 0;
+}
+.fancy {
+  line-height: 12px;
+  text-align: center;
+  overflow: hidden;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+  color: #fff;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  top: 0;
+  width: 600px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+
+.parallax-mirror {
+    visibility: visible;
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: translate3d(0px, 0px, 0px);
+    height: 550px;
+    width: 100%;
+}
+
+.parallax-slider {
+	transform: translate3d(0px, 0px, 0px);
+    position: absolute;
+    top: -99px;
+    left: 0;
+    height: 716px;
+    width: 100%;
+    max-width: none;
+}
+
+
+
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-center {
+  display: table;
+  margin: 0 auto;
+}
+.list-inline-block > li {
+  display: inline-block;
+}
+.list-horizontal > li,
+.list-inline > li {
+  float: left;
+  margin-right: 10px;
+  padding: 0;
+  display: block;
+}
+.list-horizontal > li:last-child,
+.list-inline > li:last-child {
+  margin-right: 0;
+}
+.list-horizontal.list-border > li,
+.list-inline.list-border > li {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(0,0,0,0.13);
+}
+.list-horizontal.list-border > li:last-child,
+.list-inline.list-border > li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border: none;
+}
+.list-horizontal:after,
+.list-inline:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+footer#main-footer {
+  background: #262626;
+  padding: 60px 0 30px 0;
+  color: #e6e6e6;
+  font-size: 11px;
+  line-height: 1.4em;
+  margin-top: -1px;
+}
+footer#main-footer .logo {
+  margin-bottom: 15px;
+}
+footer#main-footer a,
+footer#main-footer h1,
+footer#main-footer h2,
+footer#main-footer h3,
+footer#main-footer h4,
+footer#main-footer h5,
+footer#main-footer label {
+  color: #fff !important;
+}
+footer#main-footer .form-control {
+  background: #121212;
+  border-color: #000;
+  color: #fff;
+}
+footer#main-footer .form-control:focus {
+  border-color: #ed8323;
+}
+.list-footer > li {
+  margin-bottom: 5px;
+}
+.list-footer > li > a:hover {
+  text-decoration: underline;
+}
+
+.box-icon,
+[class^="box-icon-"],
+[class*=" box-icon-"] {
+  z-index: 2;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  background: cornflowerblue;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+.box-icon:hover,
+[class^="box-icon-"]:hover,
+[class*=" box-icon-"]:hover {
+  background: #c96810;
+  color: #fff;
+}
+.box-icon:before,
+[class^="box-icon-"]:before,
+[class*=" box-icon-"]:before {
+  display: inline-block;
+}
+
+.three-type-block img {
+	max-width: 100%;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+}
+a.block {
+	display: block;
+	padding: 10px;
+	background-color: cornflowerblue;
+	text-align: center;
+	margin-bottom: 15px;
+	color: #222;
+  border-radius: 4px;
+}
+a.block:hover {
+	color: #fff;
+}
+
+.popular-food-locations {
+	margin-bottom: 25px;
+}
+.popular-food-locations .list > li {
+	margin-bottom: 5px;
+}
+.popular-food-locations .list > li a {
+	color: #337ab7;
+}
+.popular-food-locations h5 {
+	margin-bottom: 25px;
+}
