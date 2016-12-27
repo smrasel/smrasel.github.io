@@ -41,7 +41,7 @@
                 <span>現在地から駐車場を探す</span>
               </div>
 
-              <div class="master-search-placeholder">
+              <div class="master-search-placeholder master-search-placeholder--position">
                 <form action="">
                   <input type="text" name="area-city-town" placeholder="スポット名や地名" />
                   <span>|</span>
@@ -85,6 +85,22 @@
 
 
       </div>
+
+      <div class="container-fluid reserve-parking--footer">
+            
+            <h3>駐車場を予約する</h3>
+            <div class="master-search-placeholder master-search-placeholder--position extra-abs-position">
+              <form action="">
+                <input type="text" name="area-city-town" placeholder="スポット名や地名" />
+                <span>|</span>
+                <input type="text" name="select-date" class="select-date" placeholder="日付を選択" />
+                <button type="button" class="btn btn btn-primary btn-search">Search</button>
+              </form>
+            </div>
+
+      </div>
+
+
       <div>
         <div class="bd-example" data-example-id="">
           <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
@@ -109,5 +125,7 @@
           <button type="button" class="btn btn-link">Link</button>
         </div>
       </div>
+
+
     </body>
   </html>

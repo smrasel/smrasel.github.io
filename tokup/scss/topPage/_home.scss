@@ -1,3 +1,33 @@
+$baseline_px: 16px;
+
+@mixin rem($property, $px_values) {
+  $baseline_rem: ($baseline_px / 1rem);
+  #{$property}: $px_values;
+  @if type-of($px_values) == 'number' {
+    #{$property}: $px_values / $baseline_rem;
+  }
+  @else {
+    $rem_values: ();
+
+    @each $value in $px_values {
+
+      @if $value == 0 {
+        $rem_values: append($rem_values, $value);
+      }
+
+      @else {
+        $rem_values: append($rem_values, ($value / $baseline_rem) );
+      }
+
+    }
+
+    #{$property}: $rem_values;
+
+  }
+
+}
+
+
 
 .home-top-banner {
   background: url('../images/top-page-car.jpg') no-repeat center/cover;
@@ -43,15 +73,7 @@
 .common-padding {
   padding: 25px 0;
 }
-.master-search-placeholder {
-  @include clearfix();
-  position: absolute;
-  bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
+
 
 .gps-icon {
     text-align: center;
@@ -102,10 +124,43 @@
       }
     }
   }
+  &--position {
+
+  @include clearfix();
+  position: absolute;
+  bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+
+  }
 }
 
+// .master-search-placeholder--position {
+//   @include clearfix();
+//   position: absolute;
+//   bottom: 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   left: 0;
+//   right: 0;
+// }
 
 
+.reserve-parking--footer {
+  background: url(../images/view-of-Giovinazzo-Apulia.jpg) no-repeat center/cover;
+  min-height: 253px;
+  position: relative;
+  > h3 {
+    @include rem('font-size', 20px);
+    text-align: center;
+    padding-top: 83px;
+  }
+  .extra-abs-position {
+    bottom: 80px;
+  }
+}
 
 .btn-search {
   background: $pinkishOrange url('../images/search_icon.png') no-repeat center/50%;
