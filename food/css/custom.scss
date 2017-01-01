@@ -257,18 +257,26 @@ a.block:hover {
 .header_search {
   display: none;
 }
-.sticky .header_search {
-  display: inline-block;
-  padding: 0;
-  margin: 0 0 0 35px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
-  top: -7px;
+.sticky {
+  a#logo {
+    position: relative;
+    top: -7px;
+  }
+  .header_search {
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 0 35px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    top: -7px;
+  }
 }
+
+
 .header_search {
   max-width: 600px;
   width: 50%;
