@@ -18,17 +18,19 @@
 
 .main-menu ul li a {
   display: block;
-  padding: 10px
+  /*padding: 10px*/
 }
 
 .main-menu>ul>li>a {
   color: #fff;
   padding: 2px 8px 15px 10px;
-  font-size: 14px;
+  /*font-size: 14px;*/
   margin: 0;
   font-weight: 500
 }
-
+.signUp {
+  padding: 3px 10px !important;
+}
 .layer {
   display: none;
   position: fixed;
