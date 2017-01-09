@@ -1,6 +1,18 @@
 @charset "UTF-8";
 /* YOUR CUSTOM CSS */
 
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+#stick {
+  @extend %clearfix;
+}
 .btn.btn-submit + .text-center {
   padding-top: 15px;
 }
@@ -303,4 +315,33 @@ a.block:hover {
   border-radius: 2px;
   box-sizing: border-box;
   outline: none;
+}
+
+
+
+
+// profile_page
+
+body.profile_page {
+  #stick {
+    background-color: #000;
+  }
+  a#logo {
+    position: relative;
+    top: -8px;
+  }
+}
+.profile-page {
+  @extend %clearfix;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.four-type-block {
+  .item-box {
+    margin-bottom: 15px;
+  }
+  img {
+    max-width: 100%;
+  }
 }
