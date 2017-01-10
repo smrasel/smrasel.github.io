@@ -368,7 +368,6 @@ header.sticky {
 }
 
 #subheader a {
-  color: #FF9
 }
 
 footer {
@@ -2147,13 +2146,7 @@ footer .form-group {
   background-color: #fff;
   border: 1px solid #ddd;
   border-top: none;
-  margin-bottom: 25px;
-  -webkit-border-bottom-right-radius: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  -moz-border-radius-bottomright: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px
+  
 }
 
 .tooltip_styled {

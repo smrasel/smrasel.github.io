@@ -106,11 +106,64 @@
     <section class="parallax-window" id="home" data-parallax="scroll" data-image-src="img/sub_header_home.jpg" data-natural-width="1400" data-natural-height="550">
     <div id="subheader">
         <div id="sub_content">
-            <h1>Animation line will comes here</h1>
+
+            <ul class="nav nav-tabs" id="myTab">
+                <li class="active">
+                <a href="#tab-1"><i class="fa fa-building-o"></i> <span>Hotels</span></a>
+                </li>
+                <li class=""><a href="#tab-2"><i class="fa fa-plane"></i> <span>Flights</span></a>
+                </li>
+                <li class=""><a href="#tab-3"><i class="fa fa-home"></i> <span>Rentals</span></a>
+                </li>
+                <li><a href="#tab-4"><i class="fa fa-car"></i> <span>Cars</span></a>
+                </li>
+                <li><a href="#tab-5"><i class="fa fa-bolt"></i> <span>Activities</span></a>
+                </li>
+            </ul>
+            <div class="tab-content-placeholder">
+                <div class="tab-pane-item">
+                    <h2>Search and Save on Hotels</h2>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="">Where are you going?</label>
+                                <input type="text" placeholder="City, Airport">
+                                <i class="fa fa-map-marker input-icon"></i>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="">Check-in</label>
+                                <input type="text" placeholder="">
+                                <i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="">Check-out</label>
+                                <input type="text" placeholder="">
+                                <i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="">Rooms</label>
+
+                                                                            <label>
+                                                                                <input type="radio" name="options">1</label>
+                                                                            <label>
+                                                                                <input type="radio" name="options">2</label>
+                                                                            <label>
+                                                                                <input type="radio" name="options">3</label>
+                                                                            <label>
+                                                                                <input type="radio" name="options">3+</label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Search for Hotels</button>
+                    </form>
+                </div>
+            </div>
+        
+
+            <!-- <h1>Animation line will comes here</h1>
             <p>
                 Your business tag line also comes here
             </p>
-            <form method="post" action="list_page.html">
+            <form method="post" action="">
                 <div id="custom-search-input">
                     <div class="input-group ">
                         <input type="text" class=" search-query" placeholder="anything,everything">
@@ -119,7 +172,7 @@
                         </span>
                     </div>
                 </div>
-            </form>
+            </form> -->
         </div><!-- End sub_content -->
     </div><!-- End subheader -->
     <div id="count" class="hidden-xs">
