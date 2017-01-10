@@ -515,3 +515,57 @@ body.profile_page {
     margin-bottom: 15px;
   }
 }
+
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @extend %border;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+.jumbotron {
+	background-color: #fff;
+	padding: 5px !important;
+	@extend %border;
+	> div:first-child {
+		max-width: 265px;
+		margin: 0 auto;
+		overflow: hidden;
+		div {
+			float: left;
+			&.profile_pic {
+				margin-right: 10px;
+				img {
+					height: 102px;
+					border-radius: 100%;
+					width: 102px;
+				}
+			}
+			&.profile-compact {
+				border: none;
+				text-align: left;
+				span:first-child {
+					padding-top: 25px;
+				}
+			}
+		}
+	}
+	div {
+
+	}
+	hr + span {
+		p {
+			font-size: 12px;
+		}
+	}
+}
