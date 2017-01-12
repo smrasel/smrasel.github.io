@@ -622,13 +622,16 @@ body.profile_page {
     background-color: #fff;
     padding: 15px;
     text-align: left;
-    .col-md-3 {
+    @extend %clearfix;
+    .col-md-3, .col-md-2, .col-md-4, .col-md-6, .col-md-8, .col-md-12 {
     	position: relative;
     	label:first-child {
     		font-size: 12px;
     		display: block;
     	}
     }
+
+    
     .btn.btn-primary {
     	margin-top: 20px;
     }
@@ -640,10 +643,35 @@ body.profile_page {
     	
     	& + i.fa {
 	    	position: absolute;
-	    	top: 28px;
+	    	top: 34px;
 	    	z-index: 10;
 	    	color: #666;
 	    	left: 22px;
 	    }
     }
+}
+
+
+
+.review_list_score_breakdown_right {
+    float: left;
+    width: 70%;
+    margin: 25px 0 10px;
+}
+
+.list_tighten, .list_tighten * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.review_score_breakdown_list {
+    list-style: none;
+    margin: .6em 5px;
+    padding: 0;
+    text-align: left;
+}
+li.clearfix.one_col {
+    float: left;
+    width: 220px;
+    margin-right: 40px;
 }
