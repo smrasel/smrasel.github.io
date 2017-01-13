@@ -584,7 +584,8 @@ body.profile_page {
 .nav-tabs > li > a {
   background: rgba(0,0,0,0.4);
   border: none !important;
-  color: red !important;
+  color: cornflowerblue !important;
+  text-decoration: none;
 }
 @media (max-width:992px) {
   .nav-tabs > li > a > span {
@@ -592,7 +593,7 @@ body.profile_page {
   }
 }
 .nav-tabs > li > a:hover > .fa {
-  background: #ed8323;
+  // background: #ed8323;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -605,13 +606,13 @@ body.profile_page {
   height: 30px;
   line-height: 30px;
   margin-right: 2px;
-  background: rgba(0,0,0,0.3);
+  // background: rgba(0,0,0,0.3);
   -webkit-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
 }
 .nav-tabs > li.active > a {
-  color: #fff;
+  color: #333 !important;
   padding-top: 15px;
   margin-top: -5px;
 }
@@ -651,27 +652,70 @@ body.profile_page {
     }
 }
 
+.rating {
+	& + div {
+		display: none;
+		> ul {
+			margin: 0;
+			padding:0;
+			li {
+				list-style-type: none;
+				p {
+					display: block;
+					margin: 0;
+					padding: 0;
+					& + div {
+						display: flex;
+						flex-wrap: wrap;
+						width: 100%;
+					}
+				}
+				div {
+					&:first-child {
+						flex-basis: 80%;
+					}
+					&:last-child {
+						flex-basis: 20%;
+						text-align: center;
+					    align-items: baseline;
+					}
+				}
+			}
+		}
+	}
+	&:hover + div {
+		display: block;
+		position: absolute;
+		top: 35px;
+		right: 0;
+		left: 60px;
+		background-color: #fff;
+		padding: 5px;
+		border: 1px solid rgba(0,0,0,0.1);
+
+	}
+}
+
+.progress-s {
+  width: 100%;
+}
+.progress-wrap {
+  background: #f80;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  height: 6px;
+  .progress-bar {
+    background: #ddd;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+}
 
 
-.review_list_score_breakdown_right {
-    float: left;
-    width: 70%;
-    margin: 25px 0 10px;
+.rating-block {
+
 }
 
-.list_tighten, .list_tighten * {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-.review_score_breakdown_list {
-    list-style: none;
-    margin: .6em 5px;
-    padding: 0;
-    text-align: left;
-}
-li.clearfix.one_col {
-    float: left;
-    width: 220px;
-    margin-right: 40px;
-}
+

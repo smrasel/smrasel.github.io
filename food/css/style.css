@@ -137,7 +137,8 @@ a {
 
 a:focus,a:hover {
   color: #111;
-  outline: 0
+  outline: 0;
+  text-decoration: none;
 }
 
 .btn_1,.btn_full,a.btn_1,a.btn_full {
