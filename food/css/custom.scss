@@ -742,3 +742,35 @@ body.profile_page {
 		}
 	}
 }
+
+.list-page {
+	margin-top: 51px;
+	min-height: calc(100vh - 301px);
+}
+.filter-column {
+	background: #fff;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 10px;
+	h4 {
+		padding-top: 20px;
+	}
+	label {
+		display: block;
+	}
+}
+ul.custom-col-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	li {
+		list-style-type: none;
+		> a {
+			display: flex;
+			span {
+				&:first-child {
+					flex: 1;
+				}
+			}
+		}
+	}
+}
