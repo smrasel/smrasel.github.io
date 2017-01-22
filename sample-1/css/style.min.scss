@@ -1,0 +1,46 @@
+// https://jayway.github.io/vue-js-workshop/docs/congratulations.html?q=
+.admin-panel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  > div {
+    &:first-child {
+      position: absolute;
+      top: 0;
+      left: -300px;
+      bottom: 0;
+      z-index: 1;
+      overflow-y: auto;
+      width: 300px;
+      color: #364149;
+      background: #fafafa;
+      border-right: 1px solid rgba(0,0,0,.07);
+      -webkit-transition: left 250ms ease;
+      -moz-transition: left 250ms ease;
+      -o-transition: left 250ms ease;
+      transition: left 250ms ease;
+    }
+    &:last-child {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      overflow-y: auto;
+      color: #000;
+      background: #fff;
+      -webkit-transition: left 250ms ease;
+      -moz-transition: left 250ms ease;
+      -o-transition: left 250ms ease;
+      transition: left 250ms ease;
+    }
+  }
+  &--with-aside > div {
+    &:first-child {
+      left: 0;
+    }
+    &:last-child {
+      left: 300px;
+    }
+  } 
+}

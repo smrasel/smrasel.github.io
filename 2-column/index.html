@@ -5,88 +5,321 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>title</title>
+  <link rel="stylesheet" href="css/gotham.css">
   <link rel="stylesheet" href="css/style.min.css">
   <style>
-      
+
   </style>
 </head>
 <body class="this-responsive">
+
+  <input type="checkbox" class="hamburger-fake-icon">
+  <div class="hamburger hamburger--arrow is-active">
+    <div class="hamburger-box">
+      <div class="hamburger-inner"></div>
+    </div>
+  </div>
+
   <div class="nav_wrap">
     <div id="nav">
       <ul class="primary-nav">
-        <li><a href="#"><i class="icon-home icons"></i>Admin dashboard</a></li>
-        <li><a href="#"><i class="icon-people icons"></i>Customer management</a></li>
-        <li><a href="#"><i class="icon-user icons"></i>Owner management</a></li>
-        <li><a href="#"><i class="icon-user icons"></i>Partner management</a></li>
-        <li><a href="#"><i class="icon-pie-chart icons"></i>Report</a></li>
-        <li><a href="#"><i class="icon-settings icons"></i>Seetings</a></li>
-        <li><a href="#"><i class="icon-power icons"></i>Logout</a></li>
-
-        <!-- <li><a href="C000_Top-signin.html">C000_Top-signin</a></li>
-        <li><a href="C010-Login.html">C010-Login</a></li>
-        <li><a href="C045-SignUp.html">C010-Login</a></li>
-        <li><a href="C020-ReSetPass_mail-input.html">C020-ReSetPass_mail-input</a></li>
-        <li><a href="C030-ReSetPass_Newmail-input.html">C030-ReSetPass_Newmail-input</a></li>
-        <li><a href="C040-ReSetPass_Newmail-input_Completed.html">C040-ReSetPass_Newmail-input_Completed</a></li>
-        <li><a href="C050-C050-Basic_information_Registration-sns.html">C050-C050-Basic_information_Registration-sns</a></li>
-        <li><a href="C050-Basic_information_Registration.html">C050-Basic_information_Registration</a></li>
-        <li><a href="C060-Credit_Registration.html">C060-Credit_Registration</a></li>
-        <li><a href="C060-Credit_Registration-pop.html">C060-Credit_Registration-pop</a></li>
-        <li><a href="C070-Car_registration.html">C070-Car_registration</a></li>
-        <li><a href="C080-Member_Confirmation.html">C080-Member_Confirmation</a></li>
-        <li><a href="C90Complete_registration.html">C90Complete_registration</a></li>
-        <li><a href="C90Complete_registration-02.html">C90Complete_registration-02</a></li>
-        <li><a href="C100-Member_Query.html">C100-Member_Query</a></li>
-        <li><a href="C101-Basic_information_Update.html">C101-Basic_information_Update</a></li>
-        <li><a href="C110-Credit_Registration_Update.html">C110-Credit_Registration_Update</a></li>
-        <li><a href="C120-Car_registration_Update.html">C120-Car_registration_Update</a></li>
-        <li><a href="C021-ReSetPass_mail-input_Completed.html">C021-ReSetPass_mail-input_Completed</a></li>
-        <li><a href="C130 -Parking_search-Borth.html">C130 -Parking_search-Borth</a></li>
-        <li><a href="C130 -Parking_search-selectone.html">C130 -Parking_search-selectone</a></li>
-        <li><a href="C130 -Parking_search-Tokupin-yen-u.html">C130 -Parking_search-Tokupin-yen-u</a></li>
-        <li><a href="C130 -Parking_search-Tokupin-yen.html">C130 -Parking_search-Tokupin-yen</a></li>
-        <li><a href="C130 -Parking_search-Tokupin.html">C130 -Parking_search-Tokupin</a></li>
-        <li><a href="C130 -Parking_search-Refinement.html">C130 -Parking_search-Refinement</a></li>
-        <li><a href="C140_parkking-details.html">C140_parkking-details</a></li>
-        <li><a href="C160_Enter-information.html">C160_Enter - information</a></li>
-        <li><a href="C160_Enter-information_selectmycar.html">C160_Enter-information_selectmycar</a></li>
-        <li><a href="C170_Confirmation-reservation.html">C170_Confirmation-reservation</a></li>
-        <li><a href="C180_reservation-completed.html">C180_reservation-completed</a></li>
-        <li><a href="C190-MyP-list.html">C190-MyP-list</a></li>
-        <li><a href="C200_Book-History-list.html">C200_Book-History-list</a></li>
-        <li><a href="C201_Book-History-list.html">C201_Book-History-list</a></li>
-        <li><a href="C210_Reservation-Details.html">C210_Reservation-Details</a></li>
-        <li><a href="C221Complete_Cancel.html">C221Complete_Cancel</a></li>
-        <li><a href="C211_Book-History-Detial.html">C211_Book-History-Detial</a></li>
-        <li><a href="C220_Book-Change-Deleat.html">C220_Book-Change-Deleat</a></li>
-        <li><a href="C221_Cancellation_Confirmation.html">C221_Cancellation_Confirmation</a></li>
-        <li><a href="C220_Book-Change-Add.html">C220_Book-Change-Add</a></li>
-        <li><a href="C230Complete_Cancel.html">C230Complete_Cancel</a></li>
-        <li><a href="C242Confirm-Email.html">C242Confirm-Email</a></li>
-        <li><a href="C240_Owner-Signup.html">C240_Owner-Signup</a></li>
-        <li><a href="C241Owner_Email.html">C241Owner_Email</a></li>
-        <li><a href="C250_Owner-Signup_Confirmation.html">C250_Owner-Signup_Confirmation</a></li>
-        <li><a href="C260_Application-completed.html">C260_Application-completed</a></li>
-        <li><a href="C270-Terms-of-use.html">C270-Terms-of-use</a></li>
-        <li><a href="C280_Common-errors.html">C280_Common-errors</a></li>
-        <li><a href="C240_Owner-Signup-Corporation.html">C240_Owner-Signup-Corporation</a></li>
-        <li><a href="C240_Owner-Signup-Individual.html">C240_Owner-Signup-Individual</a></li> -->
+        <li class="nav-header">
+          <div>
+            <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-1/p320x320/12122964_10207088408756068_5681705967595582076_n.jpg?oh=42cc9ca9b903d51835314e3dd2e9110b&oe=59086928" alt="" width="48" class="rounded-circle">
+            <span class="name">Rasel Mahamud</span>
+            <span class="role">Admin</span>
+          </div>
+        </li>
+        <li><a href="#" title="Admin dashboard"><i class="icon-home icons"></i><span>Admin dashboard</span></a></li>
+        <li><a href="#" title="Customer management"><i class="icon-people icons"></i><span>Customer management</span></a></li>
+        <li><a href="#" title="Owner management"><i class="icon-user icons"></i><span>Owner management</span></a></li>
+        <li><a href="#" title="Partner management"><i class="icon-user icons"></i><span>Partner management</span></a></li>
+        <li><a href="#" title="Report"><i class="icon-pie-chart icons"></i><span>Report</span></a></li>
+        <li><a href="#" title="Seetings"><i class="icon-settings icons"></i><span>Seetings</span></a></li>
+        <li><a href="#" title="Logout"><i class="icon-power icons"></i><span>Logout</span></a></li>
       </ul>
     </div>
   </div>
+
   <div id="main">
-    <input type="checkbox" >
-    <div class="nav-mobile-menu-wrap right">
-        <ul class="primary-nav">
-            <li><a href="#"><i class="icon-home icons"></i>Admin dashboard</a></li>
-            <li><a href="#"><i class="icon-people icons"></i>Customer management</a></li>
-            <li><a href="#"><i class="icon-user icons"></i>Owner management</a></li>
-            <li><a href="#"><i class="icon-user icons"></i>Partner management</a></li>
-            <li><a href="#"><i class="icon-pie-chart icons"></i>Report</a></li>
-            <li><a href="#"><i class="icon-settings icons"></i>Seetings</a></li>
-            <li><a href="#"><i class="icon-power icons"></i>Logout</a></li>
-        </ul>
+    <div class="header">
+      <p>header</p>
     </div>
-  </div>
-</body>
-</html>
+    <div class="main-content-placeholder">
+        <!-- <input type="checkbox" >
+        <div class="nav-mobile-menu-wrap right">
+            <ul class="primary-nav">
+                <li><a href="#"><i class="icon-home icons"></i>Admin dashboard</a></li>
+                <li><a href="#"><i class="icon-people icons"></i>Customer management</a></li>
+                <li><a href="#"><i class="icon-user icons"></i>Owner management</a></li>
+                <li><a href="#"><i class="icon-user icons"></i>Partner management</a></li>
+                <li><a href="#"><i class="icon-pie-chart icons"></i>Report</a></li>
+                <li><a href="#"><i class="icon-settings icons"></i>Seetings</a></li>
+                <li><a href="#"><i class="icon-power icons"></i>Logout</a></li>
+            </ul>
+          </div> -->
+
+          <table class="rtable">
+            <thead>
+              <tr>
+                <th>オーナー番号</th>
+                <th>区分</th>
+                <th>屋号/法人名</td>
+                  <th>屋/法カナ</th>
+                  <th>代表者名</th>
+                  <th>ステータス</th>
+                  <th>都道府県</th>
+                  <th>代表電話番号</th>
+                  <th>代表メールアドレ</th>
+                  <th>営業担当者</th>
+                  <th>アクション</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1234547</td>
+                  <td>個人</td>
+                  <td>68.81%</td>
+                  <td>7,895</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td><a href="#">詳細</a></td>
+                </tr>
+                <tr>
+                  <td>1234548</td>
+                  <td>個人</td>
+                  <td>68.81%</td>
+                  <td>7,895</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td><a href="#">詳細</a></td>
+                </tr>
+                <tr>
+                  <td>1234549</td>
+                  <td>個人</td>
+                  <td>68.81%</td>
+                  <td>7,895</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td><a href="#">詳細</a></td>
+                </tr>
+                <tr>
+                  <td>1234550</td>
+                  <td>個人</td>
+                  <td>68.81%</td>
+                  <td>7,895</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td><a href="#">詳細</a></td>
+                </tr>
+                <tr>
+                  <td>1234551</td>
+                  <td>個人</td>
+                  <td>68.81%</td>
+                  <td>7,895</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td><a href="#">詳細</a></td>
+                </tr>
+                <tr>
+                  <td>1234552</td>
+                  <td>個人</td>
+                  <td>68.81%</td>
+                  <td>7,895</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td><a href="#">詳細</a></td>
+                </tr>
+                <tr>
+                  <td>1234553</td>
+                  <td>個人</td>
+                  <td>68.81%</td>
+                  <td>7,895</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td><a href="#">詳細</a></td>
+                </tr>
+                <tr>
+                  <td>1234554</td>
+                  <td>個人</td>
+                  <td>68.81%</td>
+                  <td>7,895</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td>01:07</td>
+                  <td><a href="#">詳細</a></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h2>Flipped axis and overflow example :</h2>
+
+            <table class="rtable rtable--flip">
+              <thead>
+                <tr>
+                  <th>オーナー番号</th>
+                  <th>区分</th>
+                  <th>屋号/法人名</td>
+                    <th>屋/法カナ</th>
+                    <th>代表者名</th>
+                    <th>ステータス</th>
+                    <th>都道府県</th>
+                    <th>代表電話番号</th>
+                    <th>代表メールアドレ</th>
+                    <th>営業担当者</th>
+                    <th>アクション</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1234547</td>
+                    <td>個人</td>
+                    <td>田中パーキング</td>
+                    <td>タナカパーキング</td>
+                    <td>田中 悟</td>
+                    <td>開業中</td>
+                    <td>1234567</td>
+                    <td>1234567</td>
+                    <td>1234567</td>
+                    <td>1234567</td>
+                    <td><a href="#">詳細</a></td>
+
+                  </tr>
+                  <tr>
+                    <td>1234548</td>
+                    <td>個人</td>
+                    <td>田中パーキング</td>
+                    <td>タナカパーキング</td>
+                    <td>田中 悟</td>
+                    <td>解約</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td><a href="#">詳細</a></td>
+                  </tr>
+                  <tr>
+                    <td>1234549</td>
+                    <td>個人</td>
+                    <td>田中パーキング</td>
+                    <td>タナカパーキング</td>
+                    <td>田中 悟</td>
+                    <td>NG</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td><a href="#">詳細</a></td>
+                  </tr>
+                  <tr>
+                    <td>1234550</td>
+                    <td>個人</td>
+                    <td>田中パーキング</td>
+                    <td>タナカパーキング</td>
+                    <td>田中 悟</td>
+                    <td>開業中</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td><a href="#">詳細</a></td>
+                  </tr>
+                  <tr>
+                    <td>1234551</td>
+                    <td>個人</td>
+                    <td>田中パーキング</td>
+                    <td>タナカパーキング</td>
+                    <td>田中 悟</td>
+                    <td>解約</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td><a href="#">詳細</a></td>
+                  </tr>
+                  <tr>
+                    <td>1234552</td>
+                    <td>個人</td>
+                    <td>田中パーキング</td>
+                    <td>タナカパーキング</td>
+                    <td>田中 悟</td>
+                    <td>NG</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td><a href="#">詳細</a></td>
+                  </tr>
+                  <tr>
+                    <td>1234553</td>
+                    <td>個人</td>
+                    <td>田中パーキング</td>
+                    <td>タナカパーキング</td>
+                    <td>田中 悟</td>
+                    <td>開業中</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td><a href="#">詳細</a></td>
+                  </tr>
+                  <tr>
+                    <td>1234554</td>
+                    <td>個人</td>
+                    <td>田中パーキング</td>
+                    <td>タナカパーキング</td>
+                    <td>田中 悟</td>
+                    <td>NG</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td>01:07</td>
+                    <td><a href="#">詳細</a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+            <div class="footer">
+              <div class="float-md-right">
+                Design and developed by &copy; <a href="https://monstar-lab.com/global/" target="_blank">MonstarLab</a>
+              </div>
+              <div>
+                <strong>Copyright</strong> Earthcar &copy; 2016-2017. All rights reserved
+              </div>
+            </div>
+          </div>
+        </body>
+        </html>
