@@ -10,6 +10,7 @@ body {
   padding: 0;
   display: flex;
   color: #39464E;
+  overflow: hidden;
 }
 body * {
   box-sizing: border-box;
@@ -17,6 +18,9 @@ body * {
 body a {
   // color: #1a0dab;
   color: #0093d9;
+  -webkit-transition: 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-tap-highlight-color: transparent;
   &:hover, &:focus {
     text-decoration: none;
   }
@@ -34,9 +38,9 @@ body a {
 .nav_wrap {
   margin: 0;
   padding: 0;
-  // width: 203px;
+  background-color: #323538;
   position: relative;
-  flex: 0 0 203px;
+  flex: 0 0 158px;
 }
 
 #main {
@@ -44,6 +48,8 @@ body a {
   outline: none;
   position: relative;
   background-color: #fafcfe;
+  min-width: calc(100vw - 218px);
+  overflow: hidden;
   .header {
     height: 61px;
     background: #fff;
@@ -54,7 +60,7 @@ body a {
 #nav {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   border: 0;
   border-right: 1px solid #e7eaec;
   overflow: auto;
@@ -114,7 +120,7 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
 }
 
 .main-content-placeholder {
-  min-height: calc(100vh - 100px);
+  height: calc(100vh - 98px);
   overflow-y: auto;
   padding: 20px;
 }
@@ -123,7 +129,7 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
   background: none repeat scroll 0 0 white;
   border-top: 1px solid #e7eaec;
   padding: 10px 20px;
-  @include rem('font-size', 11px);
+  @include rem('font-size', 10px);
 }
 
 
@@ -141,9 +147,10 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
 
 .primary-nav {
   padding-left: 0;
+  padding-top: 48px;
   list-style-type: none;
   .nav-header {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
     padding-bottom: 20px;
     margin-bottom: 20px;
     > div {
@@ -155,6 +162,7 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
         &.role {
           @include rem('font-size', 9px);
           text-transform: uppercase;
+          color: #888;
         }
         &.name {
           font-style: normal;
@@ -162,6 +170,7 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
           padding-top: 1rem;
           @include rem('font-size', 11px);
           text-transform: uppercase;
+          color: #999;
         }
       }
       img {
@@ -178,7 +187,8 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
     color: rgb(141, 160, 170);
     i {
       margin-right: 10px;
-      color: #0093d9;
+      // color: #0093d9;
+      color: #ff6f40;
       @include rem('font-size', 18px);
       & + span {
         text-overflow: ellipsis;
@@ -188,7 +198,7 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
     }
     &:hover {
       // color: rgb(28, 130, 225);
-      color: #39464E;
+      color: #f7f7f7;
     }
   }
 } 
@@ -201,7 +211,7 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
   display: inline-block;
   overflow: visible;
   margin: 0;
-  padding: 19px;
+  padding: 18px 18px 16px;
   cursor: pointer;
   transition-timing-function: linear;
   transition-duration: .15s;
@@ -209,9 +219,9 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
   text-transform: none;
   color: inherit;
   border: 0;
-  background-color: transparent;
+  background-color: #323538;
   position: fixed;
-  left: 130px;
+  left: 89px;
   z-index: 998;
   &:hover {
     opacity: .7
@@ -241,7 +251,7 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
   transition-duration: .15s;
   transition-property: transform;
   border-radius: 4px;
-  background-color: #000
+  background-color: #888;
 }
 
 .hamburger-inner:after,
@@ -267,7 +277,7 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
   width: 70px;
   height: 60px;
   opacity: 0;
-  left: 130px;
+  left: 89px;
   cursor: pointer;
 }
 .hamburger-fake-icon:checked ~ .hamburger--arrow {
@@ -311,3 +321,18 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
 // .hamburger--arrow.is-active .hamburger-inner:after {
 //   transform: translate3d(-8px,0,0) rotate(45deg) scaleX(.7)
 // }
+
+
+
+#nav::-webkit-scrollbar, .main-content-placeholder::-webkit-scrollbar {
+    width: .5em;
+}
+ 
+#nav::-webkit-scrollbar-track, .main-content-placeholder::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+#nav::-webkit-scrollbar-thumb, .main-content-placeholder::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
