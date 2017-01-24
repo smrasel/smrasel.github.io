@@ -7,6 +7,8 @@
   <title>title</title>
   <link rel="stylesheet" href="css/gotham.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/datatables.css">
+  <!-- <link rel="stylesheet" href="css/datatables.min.css"> -->
   <style>
 
   </style>
@@ -45,10 +47,18 @@
   </div>
 <!--  -->
   <div id="main">
-    <div class="header">
+    <div class="header-top">
       <p>header</p>
     </div>
     <div class="main-content-placeholder">
+      <div class="search-panel-section">
+        <form action="">
+          <div class="row">
+            
+          </div>
+        </form>
+      </div>
+
         <!-- <input type="checkbox" >
         <div class="nav-mobile-menu-wrap right">
             <ul class="primary-nav">
@@ -62,20 +72,20 @@
             </ul>
           </div> -->
 
-          <table class="rtable">
+          <table id="myTable" class="rtable tablesorter">
             <thead>
               <tr>
-                <th>オーナー番号</th>
-                <th>区分</th>
-                <th>屋号/法人名</td>
-                  <th>屋/法カナ</th>
-                  <th>代表者名</th>
-                  <th>ステータス</th>
-                  <th>都道府県</th>
-                  <th>代表電話番号</th>
-                  <th>代表メールアドレ</th>
-                  <th>営業担当者</th>
-                  <th>アクション</th>
+                <th class="sorting_desc">オーナー番号</th>
+                <th class="sorting">区分</th>
+                <th class="sorting">屋号/法人名</td>
+                  <th class="sorting">屋/法カナ</th>
+                  <th class="sorting">代表者名</th>
+                  <th class="sorting">ステータス</th>
+                  <th class="sorting">都道府県</th>
+                  <th class="sorting">代表電話番号</th>
+                  <th class="sorting">代表メールアドレ</th>
+                  <th class="sorting">営業担当者</th>
+                  <th class="sorting">アクション</th>
                 </tr>
               </thead>
               <tbody>
@@ -186,132 +196,14 @@
               </tbody>
             </table>
 
-            <h2>Flipped axis and overflow example :</h2>
+            <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
 
-            <table class="rtable rtable--flip">
-              <thead>
-                <tr>
-                  <th>オーナー番号</th>
-                  <th>区分</th>
-                  <th>屋号/法人名</td>
-                    <th>屋/法カナ</th>
-                    <th>代表者名</th>
-                    <th>ステータス</th>
-                    <th>都道府県</th>
-                    <th>代表電話番号</th>
-                    <th>代表メールアドレ</th>
-                    <th>営業担当者</th>
-                    <th>アクション</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1234547</td>
-                    <td>個人</td>
-                    <td>田中パーキング</td>
-                    <td>タナカパーキング</td>
-                    <td>田中 悟</td>
-                    <td>開業中</td>
-                    <td>1234567</td>
-                    <td>1234567</td>
-                    <td>1234567</td>
-                    <td>1234567</td>
-                    <td><a href="#">詳細</a></td>
-
-                  </tr>
-                  <tr>
-                    <td>1234548</td>
-                    <td>個人</td>
-                    <td>田中パーキング</td>
-                    <td>タナカパーキング</td>
-                    <td>田中 悟</td>
-                    <td>解約</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td><a href="#">詳細</a></td>
-                  </tr>
-                  <tr>
-                    <td>1234549</td>
-                    <td>個人</td>
-                    <td>田中パーキング</td>
-                    <td>タナカパーキング</td>
-                    <td>田中 悟</td>
-                    <td>NG</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td><a href="#">詳細</a></td>
-                  </tr>
-                  <tr>
-                    <td>1234550</td>
-                    <td>個人</td>
-                    <td>田中パーキング</td>
-                    <td>タナカパーキング</td>
-                    <td>田中 悟</td>
-                    <td>開業中</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td><a href="#">詳細</a></td>
-                  </tr>
-                  <tr>
-                    <td>1234551</td>
-                    <td>個人</td>
-                    <td>田中パーキング</td>
-                    <td>タナカパーキング</td>
-                    <td>田中 悟</td>
-                    <td>解約</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td><a href="#">詳細</a></td>
-                  </tr>
-                  <tr>
-                    <td>1234552</td>
-                    <td>個人</td>
-                    <td>田中パーキング</td>
-                    <td>タナカパーキング</td>
-                    <td>田中 悟</td>
-                    <td>NG</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td><a href="#">詳細</a></td>
-                  </tr>
-                  <tr>
-                    <td>1234553</td>
-                    <td>個人</td>
-                    <td>田中パーキング</td>
-                    <td>タナカパーキング</td>
-                    <td>田中 悟</td>
-                    <td>開業中</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td><a href="#">詳細</a></td>
-                  </tr>
-                  <tr>
-                    <td>1234554</td>
-                    <td>個人</td>
-                    <td>田中パーキング</td>
-                    <td>タナカパーキング</td>
-                    <td>田中 悟</td>
-                    <td>NG</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td>01:07</td>
-                    <td><a href="#">詳細</a></td>
-                  </tr>
-                </tbody>
-              </table>
 
             </div>
 
@@ -321,5 +213,34 @@
               </div>
             </div>
           </div>
+          <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- <script src="js/datatables.min.js"></script> -->
+    <script src="js/__jquery.tablesorter.min.js"></script>
+
+
+    <!-- Page-Level Scripts -->
+    <script>
+        /*$(document).ready(function(){
+            $('.dataTables-example').DataTable({
+                "responsive": true,
+                "paging":   false,
+                "info":     false,
+                "bFilter": false
+            });
+
+        });*/
+
+$(document).ready(function() 
+    { 
+        $("#myTable").tablesorter(); 
+    } 
+); 
+
+
+    </script>
+
+
         </body>
         </html>
