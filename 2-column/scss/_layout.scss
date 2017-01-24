@@ -11,6 +11,7 @@ body {
   display: flex;
   color: #39464E;
   overflow: hidden;
+  background-color: $bg-color;
 }
 body * {
   box-sizing: border-box;
@@ -45,12 +46,12 @@ body a {
   flex: 1;
   outline: none;
   position: relative;
-  background-color: #fafcfe;
   min-width: calc(100vw - 218px);
   overflow: hidden;
   .header-top {
-    height: 61px;
+    @include clearfix();
     background: #fff;
+    padding: 11px 20px;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
   }
   
@@ -124,7 +125,7 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
 
 .footer {
   background: none repeat scroll 0 0 white;
-  border-top: 1px solid #e7eaec;
+  border-top: 1px solid rgba(0,0,0,0.1);
   padding: 10px 20px;
   @include rem('font-size', 10px);
 }

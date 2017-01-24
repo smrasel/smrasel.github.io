@@ -45,81 +45,69 @@
       </ul>
     </div>
   </div>
-<!--  -->
+  <!--  -->
   <div id="main">
     <div class="header-top">
-      <p>header</p>
+      <img src="images/owner-reg@3x.png" alt="" class="rounded-0 float-md-left" width="40" />
     </div>
     <div class="main-content-placeholder">
       <div class="search-panel-section">
         <form action="">
-          <fieldset>
-            <div class="form-group row">
-              <label for="" class="col-2 col-form-label">Owner ID</label>
-              <div class="col-10">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Owner ID</label>
+                <input class="form-control" type="text" value="" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="">Company Name</label>
                 <input class="form-control" type="text" value="" placeholder="">
               </div>
             </div>
-
-            <div class="form-group row">
-              <label for="" class="col-2 col-form-label">Company Name</label>
-              <div class="col-10">
-                <input class="form-control" type="text" value="" placeholder="">
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label for="" class="col-2 col-form-label">Last Name</label>
-              <div class="col-10">
-                <input class="form-control" type="text" value="" placeholder="">
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label for="" class="col-2 col-form-label">Sales Person</label>
-              <div class="col-10">
-                <input class="form-control" type="text" value="" placeholder="">
-              </div>
-            </div>
-
-          </fieldset>
-          
-          <fieldset>
-            <div class="form-group row">
-              <label for="" class="col-2 col-form-label">Status</label>
-              <div class="col-10">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Status</label>
                 <select class="form-control">
                   <option>Please select</option>
                   <option>abc</option>
                 </select>
               </div>
+              <div class="form-group">
+                <label for="">First Name</label>
+                <input class="form-control" type="text" value="" placeholder="">
+              </div>
             </div>
-          </fieldset>
-          <fieldset>
-            <div class="form-group row">
-              <label for="" class="col-2 col-form-label">Corp / Individual</label>
-              <div class="col-10">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Corp / Individual</label>
                 <select class="form-control">
                   <option>Please select</option>
                   <option>abc</option>
                 </select>
               </div>
+              <div class="form-group">
+                <label for="">Last Name</label>
+                <input class="form-control" type="text" value="" placeholder="">
+              </div>
             </div>
-          </fieldset>
-          <fieldset>
-            <div class="form-group row">
-              <label for="" class="col-2 col-form-label">Partner</label>
-              <div class="col-10">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Partner</label>
                 <select class="form-control">
                   <option>Please select</option>
                   <option>abc</option>
                 </select>
               </div>
+              <div class="form-group">
+                <label for="">Sales Person</label>
+                <input class="form-control" type="text" value="" placeholder="">
+              </div>
             </div>
-
-            
-
-          </fieldset>
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary">Search</button>
+              <button class="btn btn-secondary">Register</button>
+            </div>
+          </div>
 
         </form>
       </div>
@@ -136,139 +124,174 @@
                 <li><a href="#"><i class="icon-power icons"></i>Logout</a></li>
             </ul>
           </div> -->
+          <div class="global-padding">
+            <table id="myTable" class="rtable tablesorter">
+              <thead>
+                <tr>
+                  <th class="sorting_desc">オーナー番号</th>
+                  <th class="sorting">区分</th>
+                  <th class="sorting">屋号/法人名</td>
+                    <th class="sorting">屋/法カナ</th>
+                    <th class="sorting">代表者名</th>
+                    <th class="sorting">ステータス</th>
+                    <th class="sorting">都道府県</th>
+                    <th class="sorting">代表電話番号</th>
+                    <th class="sorting">代表メールアドレ</th>
+                    <th class="sorting">営業担当者</th>
+                    <th class="sorting">アクション</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1234547</td>
+                    <td>Active</td>
+                    <td>Individual</td>
+                    <td>ABC Parking</td>
+                    <td>BCD Parking</td>
+                    <td>Mitarai Hiroshi</td>
+                    <td>Tokyo</td>
+                    <td>01716612345</td>
+                    <td>park@earth.com</td>
+                    <td>Winnie</td>
+                    <td>
+                      <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                      <a href="javascript:;" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td>1234548</td>
+                      <td>Closed</td>
+                      <td>Individual</td>
+                      <td>ABC Parking</td>
+                      <td>BCD Parking</td>
+                      <td>Mitarai Hiroshi</td>
+                      <td>Kanagawa</td>
+                      <td>01716612345</td>
+                      <td>park@earth.com</td>
+                      <td>Lilah</td>
+                      <td>
+                        <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                        <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234549</td>
+                      <td>Blocked</td>
+                      <td>Individual</td>
+                      <td>ABC Parking</td>
+                      <td>BCD Parking</td>
+                      <td>Mitarai Hiroshi</td>
+                      <td>Fukuoka</td>
+                      <td>01716612345</td>
+                      <td>park@earth.com</td>
+                      <td>Esteban</td>
+                      <td>
+                        <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                        <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234550</td>
+                      <td>Active</td>
+                      <td>Individual</td>
+                      <td>ABC Parking</td>
+                      <td>BCD Parking</td>
+                      <td>Mitarai Hiroshi</td>
+                      <td>Okinawa</td>
+                      <td>01716612345</td>
+                      <td>park@earth.com</td>
+                      <td>Daylon</td>
+                      <td>
+                        <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                        <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234551</td>
+                      <td>Closed</td>
+                      <td>Individual</td>
+                      <td>ABC Parking</td>
+                      <td>BCD Parking</td>
+                      <td>Mitarai Hiroshi</td>
+                      <td>Ibaragi</td>
+                      <td>01716612345</td>
+                      <td>park@earth.com</td>
+                      <td>Giorgio</td>
+                      <td>
+                        <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                        <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234552</td>
+                      <td>Blocked</td>
+                      <td>Individual</td>
+                      <td>ABC Parking</td>
+                      <td>BCD Parking</td>
+                      <td>Mitarai Hiroshi</td>
+                      <td>Tokyo</td>
+                      <td>01716612345</td>
+                      <td>park@earth.com</td>
+                      <td>Fiora</td>
+                      <td>
+                        <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                        <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234553</td>
+                      <td>Active</td>
+                      <td>Individual</td>
+                      <td>ABC Parking</td>
+                      <td>BCD Parking</td>
+                      <td>Mitarai Hiroshi</td>
+                      <td>Fukuoka</td>
+                      <td>01716612345</td>
+                      <td>park@earth.com</td>
+                      <td>Willa</td>
+                      <td>
+                        <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a>  / 
+                        <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234554</td>
+                      <td>Forced Closed</td>
+                      <td>Individual</td>
+                      <td>ABC Parking</td>
+                      <td>BCD Parking</td>
+                      <td>Mitarai Hiroshi</td>
+                      <td>Tokyo</td>
+                      <td>01716612345</td>
+                      <td>park@earth.com</td>
+                      <td>Niklaus</td>
+                      <td>
+                        <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                        <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
 
-          <table id="myTable" class="rtable tablesorter">
-            <thead>
-              <tr>
-                <th class="sorting_desc">オーナー番号</th>
-                <th class="sorting">区分</th>
-                <th class="sorting">屋号/法人名</td>
-                  <th class="sorting">屋/法カナ</th>
-                  <th class="sorting">代表者名</th>
-                  <th class="sorting">ステータス</th>
-                  <th class="sorting">都道府県</th>
-                  <th class="sorting">代表電話番号</th>
-                  <th class="sorting">代表メールアドレ</th>
-                  <th class="sorting">営業担当者</th>
-                  <th class="sorting">アクション</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1234547</td>
-                  <td>個人</td>
-                  <td>68.81%</td>
-                  <td>7,895</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td><a href="#">詳細</a></td>
-                </tr>
-                <tr>
-                  <td>1234548</td>
-                  <td>個人</td>
-                  <td>68.81%</td>
-                  <td>7,895</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td><a href="#">詳細</a></td>
-                </tr>
-                <tr>
-                  <td>1234549</td>
-                  <td>個人</td>
-                  <td>68.81%</td>
-                  <td>7,895</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td><a href="#">詳細</a></td>
-                </tr>
-                <tr>
-                  <td>1234550</td>
-                  <td>個人</td>
-                  <td>68.81%</td>
-                  <td>7,895</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td><a href="#">詳細</a></td>
-                </tr>
-                <tr>
-                  <td>1234551</td>
-                  <td>個人</td>
-                  <td>68.81%</td>
-                  <td>7,895</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td><a href="#">詳細</a></td>
-                </tr>
-                <tr>
-                  <td>1234552</td>
-                  <td>個人</td>
-                  <td>68.81%</td>
-                  <td>7,895</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td><a href="#">詳細</a></td>
-                </tr>
-                <tr>
-                  <td>1234553</td>
-                  <td>個人</td>
-                  <td>68.81%</td>
-                  <td>7,895</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td><a href="#">詳細</a></td>
-                </tr>
-                <tr>
-                  <td>1234554</td>
-                  <td>個人</td>
-                  <td>68.81%</td>
-                  <td>7,895</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td>01:07</td>
-                  <td><a href="#">詳細</a></td>
-                </tr>
-              </tbody>
-            </table>
 
-            <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
-
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">«</span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">»</span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
             </div>
 
@@ -279,14 +302,14 @@
             </div>
           </div>
           <!-- Mainly scripts -->
-    <script src="js/jquery-3.1.1.min.js"></script>
+          <script src="js/jquery-3.1.1.min.js"></script>
 
-    <!-- <script src="js/datatables.min.js"></script> -->
-    <script src="js/__jquery.tablesorter.min.js"></script>
+          <!-- <script src="js/datatables.min.js"></script> -->
+          <script src="js/__jquery.tablesorter.min.js"></script>
 
 
-    <!-- Page-Level Scripts -->
-    <script>
+          <!-- Page-Level Scripts -->
+          <script>
         /*$(document).ready(function(){
             $('.dataTables-example').DataTable({
                 "responsive": true,
@@ -295,17 +318,17 @@
                 "bFilter": false
             });
 
-        });*/
+          });*/
 
-$(document).ready(function() 
-    { 
-        $("#myTable").tablesorter(); 
-    } 
-); 
-
-
-    </script>
+          $(document).ready(function() 
+          { 
+            $("#myTable").tablesorter(); 
+          } 
+          ); 
 
 
-        </body>
-        </html>
+        </script>
+
+
+      </body>
+      </html>

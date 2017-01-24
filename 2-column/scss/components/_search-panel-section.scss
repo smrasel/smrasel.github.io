@@ -1,10 +1,19 @@
 .search-panel-section {
-	overflow: hidden;
-	clear: both;
+	@include clearfix();
 	padding: 20px;
-	background-color: #fff;
+	margin-top: 5px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 	fieldset {
 		width: calc(100% / 4);
 		float: left;
+	}
+	label {
+		@include rem('font-size', 13px);
+	}
+}
+
+td {
+	.btn {
+		border-width: 1px !important;
 	}
 }

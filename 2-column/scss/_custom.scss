@@ -6,9 +6,14 @@
 $font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $baseline_px: 16px;
 $pagination-color: $link-color !default;
-
-
-
+$bg-color: #ecf0f1;
+$input-btn-border-width: 2px;
+.global-padding {
+  padding: 20px;
+}
+button, .btn, a {
+  cursor: pointer;
+}
 @font-face{
   font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
 }

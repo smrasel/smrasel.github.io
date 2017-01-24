@@ -12,7 +12,7 @@
   white-space: nowrap;
   border-collapse: collapse;
   border-spacing: 0;
-  background-color: #fff;
+  
 }
 
 .rtable,
@@ -23,6 +23,7 @@
   background-size: 10px 100%, 10px 100%;
   background-attachment: scroll, scroll;
   background-repeat: no-repeat;
+  background-color: #fff;
 }
 
 .rtable td:first-child,
