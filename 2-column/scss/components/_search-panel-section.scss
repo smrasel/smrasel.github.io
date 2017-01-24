@@ -1,4 +1,10 @@
 .search-panel-section {
+	overflow: hidden;
+	clear: both;
 	padding: 20px;
 	background-color: #fff;
+	fieldset {
+		width: calc(100% / 4);
+		float: left;
+	}
 }
