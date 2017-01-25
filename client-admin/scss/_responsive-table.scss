@@ -46,7 +46,7 @@
 .rtable th {
   text-align: left;
   text-transform: uppercase;
-  background: rgb(255, 111, 64);
+  background: #EC5328;
   color: #fff;
 }
 
@@ -54,7 +54,7 @@
 .rtable td {
   padding: 6px 12px;
   border: 1px solid #d9d7ce;
-  @include rem('font-size', 12px);
+  @include rem('font-size', 13px);
 }
 
 .rtable--flip {

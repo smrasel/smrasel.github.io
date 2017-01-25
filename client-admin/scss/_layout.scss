@@ -39,7 +39,7 @@ body a {
 .nav_wrap {
   margin: 0;
   padding: 0;
-  background-color: #323538;
+  background-color: $bg-color-new;
   position: relative;
   flex: 0 0 158px;
 }
@@ -52,12 +52,40 @@ body a {
   overflow: hidden;
   .header-top {
     @include clearfix();
-    background: #fff;
+    background: $white;
     padding: 11px 20px;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 2px 0 rgba($black, .3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 996;
+    .company-logo {
+      float: left;
+      margin-left: 100px;
+    }
+    .avatar-wrapper {
+      float: right;
+    }
+    .avatar {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: $bg-color-new;
+      color: $white;
+      text-align: center;
+      line-height: 40px;
+      @include rem('font-size', 18px);
+      border-radius: 50%;
+    }
   }
-  
 }
+@media (max-width: 720px) {
+  .company-logo {
+    display: none;
+  }
+}
+
 #nav {
   position: relative;
   width: 100%;
@@ -71,21 +99,35 @@ body a {
 
 // menu 
 
-input[type=checkbox]:checked + p {
-  color : red;
+.menu-trigger {
+  position: fixed;
+  z-index: 997;
+  border-right: 1px solid rgba(57, 70, 78, 0.2);
+  padding: 19px 20px 18px;
+  background-color: $white;
+  i {
+    @include rem('font-size', 18px);
+    font-weight: 700;
+  }
+  span {
+    padding-left: 5px;
+    position: relative;
+    top: -2px;
+    @include rem('font-size', 13px);
+  }
 }
 .nav-mobile-menu-wrap {
   position: fixed;
-  top: 0;
-  opacity: .97;
+  top: 62px;
   height: 100%;
   width: 275px;
-  background-color: #263445;
+  background-color: rgba($bg-color-new, .97);
   border-left: 1px solid hsla(0,0%,100%,.07);
   -webkit-transition: .3s;
   transition: .3s;
   z-index: 200;
   overflow-y: auto;
+  padding-bottom: 70px;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -109,7 +151,7 @@ input[type=checkbox]:checked + p {
   -ms-transform: translateX(-100%);
   border-right: 1px solid hsla(0,0%,100%,.07);
 }
-input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
+.fake-checkbox:checked ~ .nav-mobile-menu-wrap {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   -ms-transform: translateX(0);
@@ -123,13 +165,19 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
 .main-content-placeholder {
   height: calc(100vh - 98px);
   overflow-y: auto;
+  margin-top: 63px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .footer {
   background: none repeat scroll 0 0 white;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba($black,0.1);
   padding: 10px 20px;
   @include rem('font-size', 10px);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 
@@ -138,7 +186,7 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
 // }
 
 @media (min-width: 920px) {
-  body { height: 100%; overflow: hidden; }
+  // body { height: 100%; overflow: hidden; }
   #main { height: 100%; overflow: auto; }
   #search { display: none; }
   #search_frame { display: none; }
@@ -219,7 +267,7 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
   text-transform: none;
   color: inherit;
   border: 0;
-  background-color: #323538;
+  background-color: $bg-color-new;
   position: fixed;
   left: 89px;
   z-index: 998;
@@ -251,7 +299,7 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
   transition-duration: .15s;
   transition-property: transform;
   border-radius: 4px;
-  background-color: #888;
+  background-color: #8da0aa;
 }
 
 .hamburger-inner:after,
@@ -329,7 +377,7 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
 }
  
 #nav::-webkit-scrollbar-track, .main-content-placeholder::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba($black,0.3);
 }
  
 #nav::-webkit-scrollbar-thumb, .main-content-placeholder::-webkit-scrollbar-thumb {
@@ -342,7 +390,6 @@ input[type=checkbox]:checked ~ .nav-mobile-menu-wrap {
 
 //  2nd style
 
-
 .transition, ol, ul.m-menu li i.drop-cap:before, ul.m-menu li i.drop-cap:after {
   transition: all 0.25s ease-in-out;
 }
@@ -351,7 +398,9 @@ ol {
   position: relative;
   z-index: 2;
   opacity: 1;
-  list-style-type: none;
+  // list-style-type: none;
+  // padding-left: 28px;
+  color: #ff6873;
   li {
     @include rem('font-size', 13px);
   }
@@ -363,17 +412,33 @@ ol {
 input.fake-checkbox {
   position: fixed;
   z-index: 999;
+  width: 102px;
+  height: 62px;
+  opacity: 0;
+  cursor: pointer !important;
 }
 ul.m-menu {
   list-style: none;
   perspective: 900;
-  padding: 0;
+  padding: 20px 0 0 25px;
   margin: 0;
   li {
     position: relative;
     padding: 0;
-    margin: 0;
+    margin: 0 0 7px;
     animation: flipdown 0.5s ease both;
+    a {
+      font-family: $font-family;
+      @include rem('font-size', 13px);
+    }
+    ol {
+      li {
+        a {
+          line-height: 25px;
+          height: 26px;
+        }
+      }
+    }
     i {
       &.drop-cap {
         position: absolute;
@@ -383,7 +448,7 @@ ul.m-menu {
         &:before, &:after { 
           content: "";
           position: absolute;
-          background-color: #ff6873;
+          background-color: #ff6f40;
           width: 3px;
           height: 9px;
         }
