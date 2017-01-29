@@ -48,12 +48,16 @@
     <div class="header-top">
       <img src="images/owner-reg@3x.png" alt="" class="rounded-0 company-logo" width="40" />
       <div class="avatar-wrapper">
+        <span>Rasel Mahamud</span>&nbsp;&nbsp;
         <span class="avatar">R</span>
       </div>
     </div>
     <div class="main-content-placeholder">
       <div class="search-panel-section">
-        <form action="">
+        <h4>Search filter :<a href="javascript:;" onclick="toggle_visibility('filterSection');" id="showHide" data-text-swap="Show" class="pull-right">Hide</a></h4>
+        
+
+        <form action="" id="filterSection" style="display: block;">
           <div class="row">
             <div class="col-md-3">
               <div class="form-group">
@@ -115,6 +119,13 @@
 
         
           <div class="global-padding">
+
+          <div class="bg-success alert"><strong>Success!</strong> This alert box indicates a successful or positive action.</div>
+          <div class="bg-info alert"><strong>Info!</strong> This alert box indicates a neutral informative change or action.</div>
+          <div class="bg-warning alert"><strong>Warning!</strong> This alert box indicates a warning that might need attention.</div>
+          <div class="bg-danger alert"><strong>Danger!</strong> This alert box indicates a dangerous or potentially negative action.</div>
+          
+            <h4>Search result :</h4>
             <table id="myTable" class="rtable tablesorter">
               <thead>
                 <tr>
@@ -299,7 +310,7 @@
 
 
           <!-- Page-Level Scripts -->
-          <script>
+          <script type="text/javascript">
           
         /*$(document).ready(function(){
             $('.dataTables-example').DataTable({
@@ -311,7 +322,24 @@
 
           });*/
 
-          eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1.2(\'3\',0=>0.4());',5,5,'event|document|addEventListener|contextmenu|preventDefault'.split('|'),0,{}))
+          // eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1.2(\'3\',0=>0.4());',5,5,'event|document|addEventListener|contextmenu|preventDefault'.split('|'),0,{}))
+
+          
+
+          function toggle_visibility(id) {
+            var e = document.getElementById(id);
+            e.style.display = ((e.style.display!='none') ? 'none' : 'block');
+          }
+
+          var button = document.getElementById("showHide");
+          button.addEventListener('click', function() {
+            if (button.getAttribute("data-text-swap") == button.innerHTML) {
+              button.innerHTML = button.getAttribute("data-text-original");
+            } else {
+              button.setAttribute("data-text-original", button.innerHTML);
+              button.innerHTML = button.getAttribute("data-text-swap");
+            }
+          }, false);
 
           $(document).ready(function() { 
             $("#myTable").tablesorter(); 

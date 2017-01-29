@@ -3,11 +3,19 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
-$font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
 $baseline_px: 16px;
 $pagination-color: $link-color !default;
 $bg-color: #ecf0f1;
 $bg-color-new: #263445;
+
+$brand-color: #ff6f40;
+
+$shuttle-gray: #5a6170;
+$gull-gray: #9da6b8;
+$alto: #dcdcdc;
+$cornflower-blue: #6c63ff;
 
 $input-btn-border-width: 2px;
 .global-padding {
