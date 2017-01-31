@@ -1,8 +1,8 @@
 .search-panel-section {
 	@include clearfix();
 	padding: 20px;
-	margin-top: 5px;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
+	background-color: #f2f0f0;
 	fieldset {
 		width: calc(100% / 4);
 		float: left;

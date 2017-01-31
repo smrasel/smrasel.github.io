@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>title</title>
+  <link rel="stylesheet" href="css/gotham.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/datatables.css">
+  <!-- <link rel="stylesheet" href="css/datatables.min.css"> -->
+  <style>
+
+  </style>
+</head>
+<body class="this-responsive">
+
+  <section class="login">
+      <div class="forms">
+        <form class="ng-untouched ng-pristine ng-invalid">
+          <fieldset class="login-social">
+            <p class="info">SNSでログイン</p>
+            <button class="btn-tokup btn-fb btn-block" type="button">Facebookでログイン</button>
+            <button class="btn-tokup btn-gplus btn-block" type="button">Google+でログイン</button>
+          </fieldset>
+          <fieldset class="login-email">
+            <p class="top-message">またはメールアドレスでログイン</p>
+            <div class="form-group">
+              <label for="email">メールアドレス</label>
+              <input class="form-control" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+              <label for="pass">パスワード</label>
+              <input class="form-control" id="password" name="password" placeholder="8文字以上を入力してください">
+              <button class="btn btn-primary" type="button"> 表示 </button>
+              <!--template bindings={}-->
+            </div>
+            <p class="bottom-message">パスワードを忘れた方、<a routerlink="../password/reset" routerlinkactive="active" href="/auth/password/reset">こちらへ</a></p>
+          </fieldset>
+          <button class="btn btn-primary" type="submit">ログイン</button>
+          <p class="login-bottom-message">まだ会員登録していない方は、<a routerlink="../register" routerlinkactive="active" href="/auth/register">こちらへ</a></p>
+        </form>
+      </div>
+    </section>
+
+
+      </body>
+      </html>

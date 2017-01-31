@@ -5,19 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>title</title>
-  <link rel="stylesheet" href="css/gotham.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/datatables.css">
-  <!-- <link rel="stylesheet" href="css/datatables.min.css"> -->
-  <style>
 
-  </style>
 </head>
 <body class="this-responsive">
   <input type="checkbox" class="fake-checkbox">
   <a href="javascript:;" class="menu-trigger">
     <i class="icon-menu icons"></i>
-    <span>Menu</span>
+    <span>メニュー</span>
   </a>
   <div class="nav-mobile-menu-wrap left">
       <ul class="primary-nav m-menu">
@@ -48,69 +44,78 @@
     <div class="header-top">
       <img src="images/owner-reg@3x.png" alt="" class="rounded-0 company-logo" width="40" />
       <div class="avatar-wrapper">
-        <span>Rasel Mahamud</span>&nbsp;&nbsp;
-        <span class="avatar">R</span>
+        <span class="user_name">株式会社田中パーキング</span>&nbsp;&nbsp;
+        <span class="avatar">御</span>
       </div>
     </div>
     <div class="main-content-placeholder">
       <div class="search-panel-section">
-        <h4>Search filter :<a href="javascript:;" onclick="toggle_visibility('filterSection');" id="showHide" data-text-swap="Show" class="pull-right">Hide</a></h4>
+
+        <div class="bg-success alert"><strong>Success!</strong> This alert box indicates a successful or positive action.</div>
+        <div class="bg-info alert"><strong>Info!</strong> This alert box indicates a neutral informative change or action.</div>
+        <div class="bg-warning alert"><strong>Warning!</strong> This alert box indicates a warning that might need attention.</div>
+        <div class="bg-danger alert"><strong>Danger!</strong> This alert box indicates a dangerous or potentially negative action.</div>
+
+        <h4>検索パネル : <button type="button" onclick="toggle_visibility('filterSection');" id="showHide" data-text-swap="開く" class="btn btn-secondary btn-sm pull-right">閉じる</button></h4>
+        <!-- <a href="javascript:;" onclick="toggle_visibility('filterSection');" id="showHide" data-text-swap="開く" class="pull-right">閉じる</a> -->
         
 
         <form action="" id="filterSection" style="display: block;">
           <div class="row">
             <div class="col-md-3">
               <div class="form-group">
-                <label for="">Owner ID</label>
+                <label for="">オーナー番号 :</label>
                 <input class="form-control" type="text" value="" placeholder="">
               </div>
               <div class="form-group">
-                <label for="">Company Name</label>
-                <input class="form-control" type="text" value="" placeholder="">
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="form-group">
-                <label for="">Status</label>
-                <select class="form-control">
-                  <option>Please select</option>
-                  <option>abc</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="">First Name</label>
+                <label for="">屋号/法人名 :</label>
                 <input class="form-control" type="text" value="" placeholder="">
               </div>
             </div>
             <div class="col-md-3">
               <div class="form-group">
-                <label for="">Corp / Individual</label>
+                <label for="">ステータス :</label>
                 <select class="form-control">
-                  <option>Please select</option>
-                  <option>abc</option>
+                  <option>すべて</option>
+                  <option>通常</option>
+                  <option>ブロック</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="">Last Name</label>
+                <label for="">事業主/代表者名 :</label>
                 <input class="form-control" type="text" value="" placeholder="">
               </div>
             </div>
             <div class="col-md-3">
               <div class="form-group">
-                <label for="">Partner</label>
+                <label for="">法人/個人 :</label>
                 <select class="form-control">
-                  <option>Please select</option>
+                  <option>すべて</option>
+                  <option>個人</option>
+                  <option>法人</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">事業主/代表者姓 :</label>
+                <input class="form-control" type="text" value="" placeholder="">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">所属パートナー :</label>
+                <select class="form-control">
+                  <option>すべて</option>
                   <option>abc</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="">Sales Person</label>
+                <label for="">営業担当者 :</label>
                 <input class="form-control" type="text" value="" placeholder="">
               </div>
             </div>
             <div class="col-md-12">
-              <button type="submit" class="btn btn-primary">Search</button>
-              <button class="btn btn-secondary">Register</button>
+              <button type="submit" class="btn btn-primary">検索</button>
+              <button class="btn btn-secondary">新規登録</button>
             </div>
           </div>
 
@@ -120,12 +125,9 @@
         
           <div class="global-padding">
 
-          <div class="bg-success alert"><strong>Success!</strong> This alert box indicates a successful or positive action.</div>
-          <div class="bg-info alert"><strong>Info!</strong> This alert box indicates a neutral informative change or action.</div>
-          <div class="bg-warning alert"><strong>Warning!</strong> This alert box indicates a warning that might need attention.</div>
-          <div class="bg-danger alert"><strong>Danger!</strong> This alert box indicates a dangerous or potentially negative action.</div>
           
-            <h4>Search result :</h4>
+          
+            <h4>検索結果 :</h4>
             <table id="myTable" class="rtable tablesorter">
               <thead>
                 <tr>
@@ -145,8 +147,8 @@
                 <tbody>
                   <tr>
                     <td>1234547</td>
-                    <td>Active</td>
-                    <td>Individual</td>
+                    <td>開業中</td>
+                    <td>個人</td>
                     <td>ABC Parking</td>
                     <td>BCD Parking</td>
                     <td>Mitarai Hiroshi</td>
@@ -161,8 +163,8 @@
                     </tr>
                     <tr>
                       <td>1234548</td>
-                      <td>Closed</td>
-                      <td>Individual</td>
+                      <td>解約</td>
+                      <td>法人</td>
                       <td>ABC Parking</td>
                       <td>BCD Parking</td>
                       <td>Mitarai Hiroshi</td>
@@ -177,8 +179,8 @@
                     </tr>
                     <tr>
                       <td>1234549</td>
-                      <td>Blocked</td>
-                      <td>Individual</td>
+                      <td>開業中</td>
+                      <td>個人</td>
                       <td>ABC Parking</td>
                       <td>BCD Parking</td>
                       <td>Mitarai Hiroshi</td>
@@ -193,8 +195,8 @@
                     </tr>
                     <tr>
                       <td>1234550</td>
-                      <td>Active</td>
-                      <td>Individual</td>
+                      <td>解約</td>
+                      <td>法人</td>
                       <td>ABC Parking</td>
                       <td>BCD Parking</td>
                       <td>Mitarai Hiroshi</td>
@@ -209,8 +211,8 @@
                     </tr>
                     <tr>
                       <td>1234551</td>
-                      <td>Closed</td>
-                      <td>Individual</td>
+                      <td>ブロック</td>
+                      <td>法人</td>
                       <td>ABC Parking</td>
                       <td>BCD Parking</td>
                       <td>Mitarai Hiroshi</td>
@@ -225,8 +227,8 @@
                     </tr>
                     <tr>
                       <td>1234552</td>
-                      <td>Blocked</td>
-                      <td>Individual</td>
+                      <td>開業中</td>
+                      <td>個人</td>
                       <td>ABC Parking</td>
                       <td>BCD Parking</td>
                       <td>Mitarai Hiroshi</td>
@@ -241,8 +243,8 @@
                     </tr>
                     <tr>
                       <td>1234553</td>
-                      <td>Active</td>
-                      <td>Individual</td>
+                      <td>解約</td>
+                      <td>法人</td>
                       <td>ABC Parking</td>
                       <td>BCD Parking</td>
                       <td>Mitarai Hiroshi</td>
@@ -257,8 +259,8 @@
                     </tr>
                     <tr>
                       <td>1234554</td>
-                      <td>Forced Closed</td>
-                      <td>Individual</td>
+                      <td>ブロック</td>
+                      <td>個人</td>
                       <td>ABC Parking</td>
                       <td>BCD Parking</td>
                       <td>Mitarai Hiroshi</td>
