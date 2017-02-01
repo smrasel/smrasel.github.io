@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>title</title>
+  <link rel="stylesheet" href="css/gotham.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/datatables.css">
+  <!-- <link rel="stylesheet" href="css/datatables.min.css"> -->
+  <style>
+
+  </style>
+</head>
+<body class="this-responsive">
+
+  <input type="checkbox" class="hamburger-fake-icon" checked>
+  <div class="hamburger hamburger--arrow is-active">
+    <div class="hamburger-box">
+      <div class="hamburger-inner"></div>
+    </div>
+  </div>
+
+  <div class="nav_wrap">
+    <div id="nav">
+      <ul class="primary-nav">
+        <li class="nav-header">
+          <div>
+            <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-1/p320x320/12122964_10207088408756068_5681705967595582076_n.jpg?oh=42cc9ca9b903d51835314e3dd2e9110b&oe=59086928" alt="" width="48" class="rounded-circle">
+            <span class="name">Rasel Mahamud</span>
+            <span class="role">Admin</span>
+          </div>
+        </li>
+        <li><a href="javascript:;" title="トップへ"><i class="icon-home icons"></i><span>トップへ</span></a></li>
+        <li><a href="javascript:;" title="会員管理"><i class="icon-people icons"></i><span>会員管理</span></a></li>
+        <li><a href="javascript:;" title="オーナー管理"><i class="icon-user icons"></i><span>オーナー管理</span></a></li>
+        <li><a href="javascript:;" title="パートナー管理"><i class="icon-people icons"></i><span>パートナー管理</span></a></li>
+        <li><a href="javascript:;" title="担当者管理"><i class="icon-user-following icons"></i><span>担当者管理</span></a></li>
+        <li><a href="javascript:;" title="駐車場管理"><i class="icon-location-pin icons"></i><span>駐車場管理</span></a></li>
+        <li><a href="javascript:;" title="拠点審査管理"><i class="icon-calculator icons"></i><span>拠点審査管理</span></a></li>
+        <li><a href="javascript:;" title="売上管理"><i class="icon-wallet icons"></i><span>売上管理</span></a></li>
+        <li><a href="javascript:;" title="予約管理"><i class="icon-event icons"></i><span>予約管理</span></a></li>
+        <li><a href="javascript:;" title="ログアウト"><i class="icon-power icons"></i><span>ログアウト</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <!--  -->
+  <div id="main">
+    <div class="header-top">
+      <img src="images/owner-reg@3x.png" alt="" class="rounded-0 float-md-left" width="40" />
+    </div>
+    <div class="main-content-placeholder">
+      <div class="search-panel-section">
+        <form action="">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Owner ID</label>
+                <input class="form-control" type="text" value="" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="">Company Name</label>
+                <input class="form-control" type="text" value="" placeholder="">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Status</label>
+                <select class="form-control">
+                  <option>Please select</option>
+                  <option>abc</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">First Name</label>
+                <input class="form-control" type="text" value="" placeholder="">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Corp / Individual</label>
+                <select class="form-control">
+                  <option>Please select</option>
+                  <option>abc</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">Last Name</label>
+                <input class="form-control" type="text" value="" placeholder="">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Partner</label>
+                <select class="form-control">
+                  <option>Please select</option>
+                  <option>abc</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">Sales Person</label>
+                <input class="form-control" type="text" value="" placeholder="">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary">Search</button>
+              <button class="btn btn-secondary">Register</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      
+      <div class="global-padding">
+        <table id="myTable" class="rtable tablesorter">
+          <thead>
+            <tr>
+              <th class="sorting_desc">オーナー番号</th>
+              <th class="sorting">区分</th>
+              <th class="sorting">屋号/法人名</td>
+                <th class="sorting">屋/法カナ</th>
+                <th class="sorting">代表者名</th>
+                <th class="sorting">ステータス</th>
+                <th class="sorting">都道府県</th>
+                <th class="sorting">代表電話番号</th>
+                <th class="sorting">代表メールアドレ</th>
+                <th class="sorting">営業担当者</th>
+                <th class="sorting">アクション</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1234547</td>
+                <td>Active</td>
+                <td>Individual</td>
+                <td>ABC Parking</td>
+                <td>BCD Parking</td>
+                <td>Mitarai Hiroshi</td>
+                <td>Tokyo</td>
+                <td>01716612345</td>
+                <td>park@earth.com</td>
+                <td>Winnie</td>
+                <td>
+                  <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                  <a href="javascript:;" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                </td>
+              </tr>
+              <tr>
+                <td>1234548</td>
+                <td>Closed</td>
+                <td>Individual</td>
+                <td>ABC Parking</td>
+                <td>BCD Parking</td>
+                <td>Mitarai Hiroshi</td>
+                <td>Kanagawa</td>
+                <td>01716612345</td>
+                <td>park@earth.com</td>
+                <td>Lilah</td>
+                <td>
+                  <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                  <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                </td>
+              </tr>
+              <tr>
+                <td>1234549</td>
+                <td>Blocked</td>
+                <td>Individual</td>
+                <td>ABC Parking</td>
+                <td>BCD Parking</td>
+                <td>Mitarai Hiroshi</td>
+                <td>Fukuoka</td>
+                <td>01716612345</td>
+                <td>park@earth.com</td>
+                <td>Esteban</td>
+                <td>
+                  <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                  <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                </td>
+              </tr>
+              <tr>
+                <td>1234550</td>
+                <td>Active</td>
+                <td>Individual</td>
+                <td>ABC Parking</td>
+                <td>BCD Parking</td>
+                <td>Mitarai Hiroshi</td>
+                <td>Okinawa</td>
+                <td>01716612345</td>
+                <td>park@earth.com</td>
+                <td>Daylon</td>
+                <td>
+                  <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                  <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                </td>
+              </tr>
+              <tr>
+                <td>1234551</td>
+                <td>Closed</td>
+                <td>Individual</td>
+                <td>ABC Parking</td>
+                <td>BCD Parking</td>
+                <td>Mitarai Hiroshi</td>
+                <td>Ibaragi</td>
+                <td>01716612345</td>
+                <td>park@earth.com</td>
+                <td>Giorgio</td>
+                <td>
+                  <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                  <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                </td>
+              </tr>
+              <tr>
+                <td>1234552</td>
+                <td>Blocked</td>
+                <td>Individual</td>
+                <td>ABC Parking</td>
+                <td>BCD Parking</td>
+                <td>Mitarai Hiroshi</td>
+                <td>Tokyo</td>
+                <td>01716612345</td>
+                <td>park@earth.com</td>
+                <td>Fiora</td>
+                <td>
+                  <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                  <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                </td>
+              </tr>
+              <tr>
+                <td>1234553</td>
+                <td>Active</td>
+                <td>Individual</td>
+                <td>ABC Parking</td>
+                <td>BCD Parking</td>
+                <td>Mitarai Hiroshi</td>
+                <td>Fukuoka</td>
+                <td>01716612345</td>
+                <td>park@earth.com</td>
+                <td>Willa</td>
+                <td>
+                  <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a>  / 
+                  <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                </td>
+              </tr>
+              <tr>
+                <td>1234554</td>
+                <td>Forced Closed</td>
+                <td>Individual</td>
+                <td>ABC Parking</td>
+                <td>BCD Parking</td>
+                <td>Mitarai Hiroshi</td>
+                <td>Tokyo</td>
+                <td>01716612345</td>
+                <td>park@earth.com</td>
+                <td>Niklaus</td>
+                <td>
+                  <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> / 
+                  <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">«</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">»</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer">
+        <div>
+          Copyright Earthcar &copy; 2016-2017. All rights reserved.
+        </div>
+      </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- <script src="js/datatables.min.js"></script> -->
+    <script src="js/jquery.tablesorter.min.js"></script>
+
+
+    <!-- Page-Level Scripts -->
+    <script>
+      
+        /*$(document).ready(function(){
+            $('.dataTables-example').DataTable({
+                "responsive": true,
+                "paging":   false,
+                "info":     false,
+                "bFilter": false
+            });
+
+          });*/
+
+          eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1.2(\'3\',0=>0.4());',5,5,'event|document|addEventListener|contextmenu|preventDefault'.split('|'),0,{}))
+
+          $(document).ready(function() { 
+            $("#myTable").tablesorter(); 
+          }); 
+
+
+        </script>
+
+
+      </body>
+      </html>
