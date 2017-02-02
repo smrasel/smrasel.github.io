@@ -636,10 +636,48 @@ button, input[type=button], input[type=reset], input[type=submit] {
     }
     > div {
       padding: 20px;
+      
+    }
+  }
+  a {
+    color: $brand-color;
+  }
+  ol {
+    padding-left: 16px;
+    color: #333;
+    li {
+      padding-bottom: 4px;
     }
   }
 }
 
+
+@media (max-width: 600px) {
+  .partner-admin-information {
+    border-radius: 5px;
+    > div {
+      float: none;
+      width: 100%;
+    }
+    ol {
+      padding-top: 15px;
+    }
+  }
+  .text-right {
+    text-align: left !important;
+  }
+}
+
+
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
 
 // amazon button style
 
