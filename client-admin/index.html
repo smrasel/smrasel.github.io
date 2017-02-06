@@ -52,15 +52,199 @@
       <div class="search-panel-section">
 
         <div class="bg-success alert"><strong>Success!</strong> This alert box indicates a successful or positive action.</div>
-        <div class="bg-info alert"><strong>Info!</strong> This alert box indicates a neutral informative change or action.</div>
+        <!-- <div class="bg-info alert"><strong>Info!</strong> This alert box indicates a neutral informative change or action.</div>
         <div class="bg-warning alert"><strong>Warning!</strong> This alert box indicates a warning that might need attention.</div>
-        <div class="bg-danger alert"><strong>Danger!</strong> This alert box indicates a dangerous or potentially negative action.</div>
+        <div class="bg-danger alert"><strong>Danger!</strong> This alert box indicates a dangerous or potentially negative action.</div> -->
 
-        <h4>検索パネル : <button type="button" onclick="toggle_visibility('filterSection');" id="showHide" data-text-swap="開く" class="btn btn-secondary btn-sm pull-right">閉じる</button></h4>
+        <h4 class="h6"><strong>検索パネル :</strong> <button type="button" onclick="toggle_visibility('filterSection');" id="showHide" data-text-swap="開く" class="btn btn-secondary btn-sm pull-right">閉じる</button></h4>
         <!-- <a href="javascript:;" onclick="toggle_visibility('filterSection');" id="showHide" data-text-swap="開く" class="pull-right">閉じる</a> -->
         
+        <form action="" id="filterSection" style="display: block;" class="inline-custom-form">
+          <div class="row mt-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group row">
+                        <label for="" class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0">オーナー番号 :</label>
+                        <div class="col-md-6">
+                            <input class="form-control" type="text" value="" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group row">
+                        <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">ステータス :</label>
+                        <div class="col-md-6 ">
+                            <select class="form-control">
+                                <option>すべて</option>
+                                <option>通常</option>
+                                <option>ブロック</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group row">
+                        <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">法人/個人 :</label>
+                        <div class="col-md-6 ">
+                            <select class="form-control">
+                                <option>すべて</option>
+                                <option>個人</option>
+                                <option>法人</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group row">
+                        <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">所属パートナー :</label>
+                        <div class="col-md-6 ">
+                            <select class="form-control">
+                                <option>すべて</option>
+                                <option>abc</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group row">
+                        <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">屋号/法人名 :</label>
+                        <div class="col-md-6 ">
+                            <input class="form-control" type="text" value="" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group row">
+                        <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">屋号/法人名カナ ：</label>
+                        <div class="col-md-6 ">
+                            <input class="form-control" type="text" value="" placeholder="">
+                        </div>
+                    </div>
+                </div>                               
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group row">
+                        <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">事業主/代表者姓 ：</label>
+                        <div class="col-md-6 ">
+                            <input class="form-control" type="text" value="" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group row">
+                        <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">事業主/代表者姓カナ</label>
+                        <div class="col-md-6 ">
+                            <input class="form-control" type="text" value="" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group row">
+                        <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">事業主/代表者名 :</label>
+                        <div class="col-md-6 ">
+                            <input class="form-control" type="text" value="" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group row">
+                        <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">事業主/代表者名カナ ：</label>
+                        <div class="col-md-6 ">
+                            <input class="form-control" type="text" value="" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group row">
+                        <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">営業担当者 ：</label>
+                        <div class="col-md-6 ">
+                            <input class="form-control" type="text" value="" placeholder="">
+                        </div>
+                    </div>
+                </div>
 
-        <form action="" id="filterSection" style="display: block;">
+                <div class="col-md-12 text-lg-right">
+                  <button type="submit" class="btn btn-primary">検索</button>
+                  <button class="btn btn-secondary">新規登録</button>
+                </div> 
+
+
+            <!-- <div class="col-md-3">
+              <div class="form-group">
+                <label for="">オーナー番号 :</label>
+                <input class="form-control-custom" type="text" value="" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="">屋号/法人名 :</label>
+                <input class="form-control-custom" type="text" value="" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="">事業主/代表者姓：</label>
+                <input class="form-control-custom" type="text" value="" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="">営業担当者：</label>
+                <input class="form-control-custom" type="text" value="" placeholder="">
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">ステータス：</label>
+                <select>
+                  <option>すべて</option>
+                  <option>通常</option>
+                  <option>ブロック</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">屋号/法人名カナ：</label>
+                <input class="form-control-custom" type="text" value="" placeholder="" />
+              </div>
+              <div class="form-group">
+                <label for="">事業主/代表者姓カナ：</label>
+                <input class="form-control-custom" type="text" value="" placeholder="" />
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">法人/個人：</label>
+                <select>
+                  <option>すべて</option>
+                  <option>個人</option>
+                  <option>法人</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">事業主/代表者名：</label>
+                <input class="form-control-custom" type="text" value="" placeholder="">
+              </div>
+            </div>
+
+
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">所属パートナー :</label>
+                <select>
+                  <option>すべて</option>
+                  <option>abc</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">営業担当者 :</label>
+                <input class="form-control-custom" type="text" value="" placeholder="">
+              </div>
+            </div>
+
+
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary">検索</button>
+              <button class="btn btn-secondary">新規登録</button>
+            </div> -->
+
+          </div>
+        </form>
+
+        <!-- <form action="" id="filterSection" style="display: block;">
           <div class="row">
             <div class="col-md-3">
               <div class="form-group">
@@ -118,8 +302,10 @@
               <button class="btn btn-secondary">新規登録</button>
             </div>
           </div>
+        </form> -->
 
-        </form>
+        
+
       </div>
 
         
@@ -127,7 +313,7 @@
 
           
           
-            <h4>検索結果 :</h4>
+            <h4 class="h6"><strong>検索結果 :</strong></h4>
             <table id="myTable" class="rtable tablesorter">
               <thead>
                 <tr>
@@ -324,7 +510,7 @@
 
           });*/
 
-          eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1.2(\'3\',0=>0.4());',5,5,'event|document|addEventListener|contextmenu|preventDefault'.split('|'),0,{}))
+          // eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1.2(\'3\',0=>0.4());',5,5,'event|document|addEventListener|contextmenu|preventDefault'.split('|'),0,{}))
 
           
 

@@ -1,0 +1,28 @@
+<div class="cbp-l-inline">
+    <div class="cbp-l-inline-left GrayScale">
+        <a href="demos/demo_05.jpg" data-gal="prettyPhoto[product-gallery]"><img src="demos/demo_05.jpg" alt=""></a>
+    </div>
+
+    <div class="cbp-l-inline-right">
+        <div class="cbp-l-inline-title">Simple Music for UI</div>
+        <div class="cbp-l-inline-subtitle">
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Assumenda, vel provident molestiae perferendis..</p></div>
+
+        <div class="cbp-l-inline-desc">
+        <p>Minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae!
+        </p>
+        </div>
+
+        <a href="#" target="_blank" class="cbp-l-inline-view">VIEW PROJECT</a>
+    </div>
+</div>
+
+<script type="text/javascript"> 
+(function($) {
+"use strict";
+    jQuery('a[data-gal]').each(function() {
+    jQuery(this).attr('rel', jQuery(this).data('gal'));
+    });     
+    jQuery("a[data-gal^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',slideshow:false,overlay_gallery: false,theme:'dark_square',social_tools:false,deeplinking:false});
+})(jQuery);
+</script>

@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>title</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/datatables.css">
+
+</head>
+<body class="this-responsive">
+  <input type="checkbox" class="fake-checkbox">
+  <a href="javascript:;" class="menu-trigger">
+    <i class="icon-menu icons"></i>
+    <span>メニュー</span>
+  </a>
+  <div class="nav-mobile-menu-wrap left">
+    <ul class="primary-nav m-menu">
+      <li><a href="javascript:;" title="トップへ"><i class="icon-home icons"></i><span>トップへ</span></a></li>
+      <li><a href="javascript:;" title="会員管理"><i class="icon-people icons"></i><span>会員管理</span></a></li>
+      <li><a href="javascript:;" title="オーナー管理"><i class="icon-user icons"></i><span>オーナー管理</span></a></li>
+      <li><a href="javascript:;" title="パートナー管理"><i class="icon-people icons"></i><span>パートナー管理</span></a></li>
+      <li><a href="javascript:;" title="担当者管理"><i class="icon-user-following icons"></i><span>担当者管理</span></a></li>
+      <li><a href="javascript:;" title="駐車場管理"><i class="icon-location-pin icons"></i><span>駐車場管理</span></a></li>
+      <li>
+        <input type="checkbox" checked>
+        <i class="drop-cap"></i>
+        <a href="javascript:;" title="拠点審査管理"><i class="icon-calculator icons"></i><span>拠点審査管理</span></a>
+        <ol>
+          <li><a href="javascript:;" title="本部売上">本部売上</a></li>
+          <li><a href="javascript:;" title="パートナー売上">パートナー売上</a></li>
+          <li><a href="javascript:;" title="オーナー売上">オーナー売上</a></li>
+          <li><a href="javascript:;" title="駐車場売上">駐車場売上</a></li>
+        </ol>
+      </li>
+      <li><a href="javascript:;" title="売上管理"><i class="icon-wallet icons"></i><span>売上管理</span></a></li>
+      <li><a href="javascript:;" title="予約管理"><i class="icon-event icons"></i><span>予約管理</span></a></li>
+      <li><a href="javascript:;" title="ログアウト"><i class="icon-power icons"></i><span>ログアウト</span></a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <div class="header-top">
+      <img src="images/owner-reg@3x.png" alt="" class="rounded-0 company-logo" width="40" />
+      <div class="avatar-wrapper">
+        <span class="user_name">株式会社田中パーキング</span>&nbsp;&nbsp;
+        <span class="avatar">御</span>
+      </div>
+    </div>
+    <div class="main-content-placeholder">
+      <div class="search-panel-section">
+
+        <div class="row">
+          <div class="col-md-12">
+            <!-- <button type="button" class="btn btn-secondary btn-group-sm-s float-md-left">一覧へ戻る</button> -->
+            <a href="k100.html" class="btn btn-secondary float-md-left">一覧へ戻る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="global-padding">
+
+        <section class="details-page">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="m-0">詳細情報</h6>
+                </div>
+                <div class="card-block ">
+
+                    <form action="" class="inline-custom-form">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group row">
+                                <label for="" class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0">法人/個人 :</label>
+                                <div class="col-md-6">
+                                    <select class="form-control">
+                                        <option>選択してください</option>
+                                        <option>個人</option>
+                                        <option>法人</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group row">
+                                <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">所属パートナー :</label>
+                                <div class="col-md-6 ">
+                                    <select class="form-control">
+                                        <option>選択してください</option>
+                                        <option>個人</option>
+                                        <option>法人</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group row">
+                                <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">屋号/法人名 :</label>
+                                <div class="col-md-6 ">
+                                    <input type="text" class="form-control" value="田中パーキング" >
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group row">
+                                <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">屋号/法人名カナ :</label>
+                                <div class="col-md-6 ">
+                                    <input class="form-control" type="text" value="タナカパーキング" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group row">
+                                <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">ブランド名 :</label>
+                                <div class="col-md-6 ">
+                                    <input class="form-control" type="text" value="MAX田中パーク" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group row">
+                                <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">事業主/代表者姓 :</label>
+                                <div class="col-md-6 ">
+                                    <input class="form-control" type="text" value="御手洗" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group row">
+                                <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">事業主/代表者名 :</label>
+                                <div class="col-md-6 ">
+                                    <input class="form-control" type="text" value="宏" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group row">
+                                <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">事業主/代表者名カナ :</label>
+                                <div class="col-md-6 ">
+                                    <input class="form-control" type="text" value="ミタライ" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group row">
+                                <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">事業主/代表者名カナ :</label>
+                                <div class="col-md-6 ">
+                                    <input class="form-control" type="text" value="ヒロシ" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group row">
+                                <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">契約日 :</label>
+                                <div class="col-md-6 ">
+                                    <input class="form-control" type="text" value="YYYY/MM/DD" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group row">
+                                <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">P :</label>
+                                <div class="col-md-6 ">
+                                    <a href="#" class="btn-link">ロゴアップロード</a>
+                                    <a href="#" class="btn-link">削除する</a>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                    </div>
+                </form>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="details-page">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="m-0">基本情報</h6>
+                </div>
+                <div class="card-block">
+                    <form action="" class="inline-custom-form">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label for="" class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0">郵便番号 :</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" value="816-0904">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">都道府県 :</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" value="東京都">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">市区町村 :</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" value="世田谷区" >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">番地等 :</label>
+                                    <div class="col-md-8">
+                                        <input class="form-control" type="text" value="上目黒5-3-1" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">建物名 :</label>
+                                    <div class="col-md-8">
+                                        <input class="form-control" type="text" value="EGビル 7F" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">電話番号 :</label>
+                                    <div class="col-md-8">
+                                        <input class="form-control" type="text" value="035040148" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">メールアドレス :</label>
+                                    <div class="col-md-8">
+                                        <input class="form-control" type="text" value="hiroshi.mitarai@earthcar.com" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="details-page">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="m-0">支払先口座情報</h6>
+                </div>
+                <div class="card-block">
+                    <form action="" class="inline-custom-form">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label for="" class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0">銀行コード :</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" value="0021">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">支店コード :</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" value="002">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">口座種別 :</label>
+                                    <div class="col-md-8">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">One</option>
+                                            <option value="">Two</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">口座番号 :</label>
+                                    <div class="col-md-8">
+                                        <input class="form-control" type="text" value="1860370" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">口座名義人 :</label>
+                                    <div class="col-md-8">
+                                        <input class="form-control" type="text" value="御手洗 宏" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">口座名義人カナ :</label>
+                                    <div class="col-md-8">
+                                        <input class="form-control" type="text" value="ミタライ ヒロシ" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <span class="form-link">※ ゆうちょ銀行口座をご登録される場合は、以下のサイトで記号番号を口座番号に変換の上、ご入力ください。<a href="http://www.jp-bank.japanpost.jp/kojin/sokin/furikomi/kouza/kj_sk_fm_kz_1.html
+" >Link</a></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="details-page">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="m-0">支払条件情報</h6>
+                </div>
+                <div class="card-block">
+                    <form action="" class="inline-custom-form">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label for="" class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0">オーナー売上分配割合 :</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" value="80.50">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">パートナー売上分配割合 :</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" value="9.05">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">特Pロイヤリティ :</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" value="10.00">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">支払い閾値設定 :</label>
+                                    <div class="col-md-8">
+                                        <input class="form-control" type="text" value="5000" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-md-4 text-md-left text-lg-right col-form-label pr-md-0" for="">事務手数料 :</label>
+                                    <div class="col-md-8">
+                                        <input class="form-control" type="text" value="500" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class=" mb-5">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="m-0">パートナー管理情報</h6>
+                </div>
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <dl class="row mb-0">
+                                <dt class="col-md-3 text-md-right">営業担当者 ：</dt>
+                                <dd class="col-md-9 p-md-0"><input type="text" class="form-control" value="田中 悟"></dd>
+                                <dt class="col-md-3 text-md-right">メモ欄 ：</dt>
+                                <dd class="col-md-9 p-md-0">
+                                    <textarea name="" id="" cols="30" rows="10" class="form-control">気さくな方で、話しやすい。
+                                    ・ 過去にXXパーキングに駐車場を提供していたが、担当営業と気が合わなくてやめた経緯あり、何か揉めそうなことになったら早めにエスカレして対応すべき。</textarea>
+                                    
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" mb-5">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="m-0">本部管理情報</h6>
+                </div>
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <dl class="row mb-0">
+                                <dt class="col-md-3 text-md-right">メモ欄 ：</dt>
+                                <dd class="col-md-9  p-md-0">
+                                    <textarea name="" id="" cols="30" rows="10" class="form-control">拠点数がこの数ヶ月でかなり増えており、今後に期待できるオーナー。
+                                    特P利用方法についての問い合わせが多く、積極的にご利用いただいているため、個別にサポートをしていくべき。</textarea>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <div>
+        Copyright Earthcar &copy; 2016-2017. All rights reserved.
+      </div>
+    </div>
+  </div>
+  <!-- Mainly scripts -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+
+  <!-- <script src="js/datatables.min.js"></script> -->
+  <script src="js/jquery.tablesorter.min.js"></script>
+
+
+  </body>
+</html>
