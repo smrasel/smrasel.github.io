@@ -19,7 +19,7 @@ html {
 body {
   margin: 1em;
   font-size: size('font-min');
-  background-color: #f5f5f5;
+  background-color: #3A3E64;
   @media (min-width: size('width-min')) {
     // source: https://www.smashingmagazine.com/2016/05/fluid-typography/
     $font-size-diff: size('font-max') - size('font-min');
@@ -487,7 +487,7 @@ footer, header, hgroup, menu, nav, section {
 /****************************************************************************  HEADER
 ****************************************************************************/
 header {
-  background-color: #f7f7f7;
+  // background-color: #3A3E64;
   position: fixed;
   z-index: 11;
   left: 50px;
@@ -500,6 +500,7 @@ header {
   -ms-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
+  
 }
 
 header * {
@@ -516,14 +517,110 @@ ul.menu {
   text-align: center;
   padding-left: 0;
   list-style-type: none;
+  text-decoration: none !important;
+  border: none !important;
   li {
     padding: 0 8px;
     display: inline-block;
+    color: #fff;
+    text-decoration: none !important;
+    border: none !important;
+    a {
+      color: #FFD540;
+      text-decoration: none !important;
+      border: none !important;
+    }
   }
 }
 
 
+// about service
 
+.about-services {
+    position: relative;
+    min-height: 350px;
+}
+.about-wave {
+    animation: wave 5s infinite;
+}
+@keyframes wave {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+.about-services .service {
+    border: 4px solid #FFF;
+    border-radius: 999px;
+    -moz-border-radius: 999px;
+    -webkit-border-radius: 999px;
+    color: #FFF;
+    background: #4A4A4A;
+    font-weight: 100;
+    font-size: 26px;
+    display: inline-block;
+    /*position: relative;*/
+
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transition: 0.35s;
+}
+.about-services .service:hover,
+.about-services .service:focus {
+    transform: scale(1.25);
+    border: 4px solid #FAD348;
+    z-index: 100;
+}
+.about-services .service p {
+    width: 100%;
+    text-align: center;
+    line-height: 28px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+}
+.about-services .service.r220 {
+    width: 220px;
+    height: 220px;
+}
+.about-services .service.r200 {
+    width: 200px;
+    height: 200px;
+}
+.about-services .service.r170 {
+    width: 170px;
+    height: 170px;
+}
+.about-services .service.r150 {
+    width: 150px;
+    height: 150px;
+}
+.about-services .service.r100 {
+    width: 100px;
+    height: 100px;
+}
+.visible-xs {
+    display: none !important;
+  }
+@media all and (max-width: 767px) {
+  .about-services {
+    transform: scale(0.66) translateX(-80px) translateY(-110px);
+    min-height: 420px;
+  }
+  .hidden-xs {
+    display: none !important;
+  }
+  .visible-xs {
+    display:block !important
+  }
+}
 
 
 svg.home-svg {
@@ -559,11 +656,70 @@ svg.home-svg {
 .our-people {
   padding: 190px 170px 200px;
   // background-color: #efefef;
-  background-color: red;
+  background-color: #FFD540;
   margin-top: -209px;
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   -ms-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
+  div {
+    display: none;
+  }
+  input {
+    display: none;
+  }
+  label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+  }
+  input:checked + label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid orange;
+    border-bottom: 1px solid #fff;
+  }
+
+  #tab1:checked ~ #content1,
+  #tab2:checked ~ #content2,
+  #tab3:checked ~ #content3,
+  #tab4:checked ~ #content4 {
+    display: block;
+  }
+}
+.our-services {
+  padding: 190px 170px 200px;
+  background-color: #efefef;
+  margin-top: -32px;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100% !important;
+  div {
+    text-align: center;
+    padding: 70px;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    // width: calc(100% / 3);
+    // float: left;
+    flex: 1;
+    &:last-child {
+      box-sizing: border-box;
+      border-left: solid 1px rgba(0,0,0,0.1);
+      &:before {
+        content: url(../images/plus.png);
+        float: left;
+        margin-left: -120px;
+        margin-top: 30px;
+      }
+    }
+  }
 }
