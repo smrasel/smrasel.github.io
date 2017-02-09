@@ -12,7 +12,7 @@ body {
   display: flex;
   color: #39464E;
   overflow: hidden;
-  background-color: $bg-color;
+  background-color: #fff;
   position: relative;
   
 }
@@ -258,7 +258,7 @@ body a {
 }
 
 .footer {
-  background: none repeat scroll 0 0 white;
+  background: none repeat scroll 0 0 #f8f8f8;
   border-top: 1px solid rgba($black,0.1);
   padding: 10px 20px;
   @include rem('font-size', 10px);
@@ -622,15 +622,16 @@ ul.m-menu {
   }
   li {
     float: left;
-    min-width: calc(100% / 4);
+    min-width: calc(100% / 3);
     list-style-type: none;
     padding-bottom: 10px;
-    @include rem('font-size', 11px);
+    @include rem('font-size', 13px);
     strong {
       display: inline-block;
       min-width: 130px;
     }
     span {
+      margin-left: 10px;
     }
   }
 }
@@ -665,20 +666,22 @@ ul.m-menu {
 .form-link {
   @include rem('font-size', 11px);
 }
+
+
 @media only screen and (max-device-width: 668px) {
   .custom-col-form {
-  li {
-    float: none;
-    
-    @include rem('font-size', 11px);
-    strong {
-      display: inline-block;
-      min-width: 130px;
-    }
-    span {
+    li {
+      float: none;
+
+      @include rem('font-size', 11px);
+      strong {
+        display: inline-block;
+        min-width: 130px;
+      }
+      span {
+      }
     }
   }
-}
 }
 
 
@@ -982,4 +985,16 @@ button, input[type=button], input[type=reset], input[type=submit] {
     background: #f3d078;
     background: -webkit-linear-gradient(top,#f7dfa5,#f0c14b);
     background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+}
+
+
+@media only screen and (min-width:690px) and (max-width: 910px)  {
+  .custom-col-form li {
+    min-width: calc(100% / 2);
+  }
+}
+@media (max-width: 689px)  {
+  .custom-col-form li {
+    min-width: 100%;
+  }
 }

@@ -18,5 +18,5 @@ table.tablesorter thead tr .headerSortDown {
 	background-image: url(../images/desc-white.png);
 }
 table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
-background-color: #EC5328;
+background-color: darken(#8da0aa, 15%);
 }
