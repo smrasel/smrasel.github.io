@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>K090</title>
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--endbuild-->
+</head>
+
+<body class="this-responsive">
+    <aside>
+        <input type="checkbox" class="fake-checkbox">
+        <a href="javascript:;" class="menu-trigger">
+            <i class="icon-menu icons"></i>
+            <span>メニュー</span>
+        </a>
+        <nav class="nav-mobile-menu-wrap left">
+            <ul class="primary-nav m-menu">
+                <li><a href="javascript:;" title="トップへ"><i class="icon-home icons"></i><span>トップへ</span></a></li>
+                <li><a href="javascript:;" title="会員管理"><i class="icon-people icons"></i><span>会員管理</span></a></li>
+                <li><a href="javascript:;" title="オーナー管理"><i class="icon-user icons"></i><span>オーナー管理</span></a></li>
+                <li><a href="javascript:;" title="パートナー管理"><i class="icon-people icons"></i><span>パートナー管理</span></a></li>
+                <li><a href="javascript:;" title="担当者管理"><i class="icon-user-following icons"></i><span>担当者管理</span></a></li>
+                <li><a href="javascript:;" title="駐車場管理"><i class="icon-location-pin icons"></i><span>駐車場管理</span></a></li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i class="drop-cap"></i>
+                    <a href="javascript:;" title="拠点審査管理"><i class="icon-calculator icons"></i><span>拠点審査管理</span></a>
+                    <ol>
+                        <li><a href="javascript:;" title="本部売上">本部売上</a></li>
+                        <li><a href="javascript:;" title="パートナー売上">パートナー売上</a></li>
+                        <li><a href="javascript:;" title="オーナー売上">オーナー売上</a></li>
+                        <li><a href="javascript:;" title="駐車場売上">駐車場売上</a></li>
+                    </ol>
+                </li>
+                <li><a href="javascript:;" title="売上管理"><i class="icon-wallet icons"></i><span>売上管理</span></a></li>
+                <li><a href="javascript:;" title="予約管理"><i class="icon-event icons"></i><span>予約管理</span></a></li>
+                <li><a href="javascript:;" title="ログアウト"><i class="icon-power icons"></i><span>ログアウト</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div id="main">
+        <div class="header-top">
+            <img src="images/owner-reg@3x.png" alt="" class="rounded-0 company-logo" width="40" />
+            <div class="avatar-wrapper">
+                <span class="user_name">株式会社田中パーキング</span>&nbsp;&nbsp;
+                <span class="avatar">御</span>
+            </div>
+        </div>
+        <div class="main-content-placeholder">
+            <div class="search-panel-section">
+                <!--                 
+                <div class="bg-success alert"><strong>Success!</strong> This alert box indicates a successful or positive action.</div>
+                <div class="bg-info alert"><strong>Info!</strong> This alert box indicates a neutral informative change or action.</div>
+                <div class="bg-warning alert"><strong>Warning!</strong> This alert box indicates a warning that might need attention.</div>
+                <div class="bg-danger alert"><strong>Danger!</strong> This alert box indicates a dangerous or potentially negative action.</div>  
+                -->
+                <h4 class="h6">
+                  <strong>検索パネル :</strong> 
+                  <button type="button" 
+                      onclick="toggle_visibility('filterSection');" 
+                      id="showHide" data-text-swap="開く" 
+                      class="btn btn-secondary btn-sm pull-right">閉じる</button>
+                  </h4>
+
+                <!-- <a href="javascript:;" onclick="toggle_visibility('filterSection');" id="showHide" data-text-swap="開く" class="pull-right">閉じる</a> -->
+                <div class="clearfix"></div>
+                <form action="" id="filterSection">
+                  <!-- top section start -->
+                  
+                <section class="row justify-content-center">
+                  <div class="card p-0">
+                      <nav class="nav">
+                          <a class="nav-link active" href="#">Basic</a>
+                          <a class="nav-link" href="#">Advanced</a>
+                      </nav>
+                      <div class="card-block">
+                          <fieldset class="basic-search">
+                              <div class="form-group">
+                                    <label class="col-form-label" for="">所属パートナー</label>
+                                    <div class="input-space">
+                                        <select class="form-control custom-select">
+                                            <option>すべて</option>
+                                            <option>abc</option>
+                                        </select>
+                                    </div>
+                              </div>
+                              <div class="form-group">
+                                    <label class="col-form-label" for="">ステータス</label>
+                                    <div class="input-space">
+                                        <select class="form-control custom-select">
+                                            <option>すべて</option>
+                                            <option>通常</option>
+                                            <option>ブロック</option>
+                                        </select>
+                                    </div>
+                              </div>
+                              <div class="form-group">
+                                    <label class="col-form-label" for="">法人/個人</label>
+                                    <div class="input-space">
+                                        <select class="form-control custom-select">
+                                            <option>すべて</option>
+                                            <option>個人</option>
+                                            <option>法人</option>
+                                        </select>
+                                    </div>
+                              </div>
+                          </fieldset>
+                      </div>
+                  </div>
+                </section>
+
+
+
+
+<!-- 
+                  <fieldset class="basic-search">
+                      <div class="form-group">
+                          <label class="col-form-label" for="">所属パートナー</label>
+                          <div class="input-space">
+                              <select class="form-control custom-select">
+                                  <option>すべて</option>
+                                  <option>abc</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                            <label class="col-form-label" for="">ステータス</label>
+                            <div class="input-space">
+                                <select class="form-control custom-select">
+                                    <option>すべて</option>
+                                    <option>通常</option>
+                                    <option>ブロック</option>
+                                </select>
+                            </div>
+                      </div>
+                      <div class="form-group">
+                            <label class="col-form-label" for="">法人/個人</label>
+                            <div class="input-space">
+                                <select class="form-control custom-select">
+                                    <option>すべて</option>
+                                    <option>個人</option>
+                                    <option>法人</option>
+                                </select>
+                            </div>
+                      </div>
+                  </fieldset>
+ -->
+
+
+                  <!-- top section end -->
+
+                  <!-- middle section start -->
+
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="form-group row">
+                            <label for="" class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0">オーナー番号</label>
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" value="" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="form-group row">
+                            <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">屋号/法人名</label>
+                            <div class="col-md-6 ">
+                                <input class="form-control" type="text" value="" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="form-group row">
+                            <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">屋号/法人名カナ</label>
+                            <div class="col-md-6 ">
+                                <input class="form-control" type="text" value="" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="form-group row">
+                            <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">事業主/代表者名</label>
+                            <div class="col-md-6 ">
+                                <input class="form-control" type="text" value="" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="form-group row">
+                            <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">事業主/代表者名カナ</label>
+                            <div class="col-md-6 ">
+                                <input class="form-control" type="text" value="" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="form-group row">
+                            <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">電話番号</label>
+                            <div class="col-md-6 ">
+                                <input class="form-control" type="text" value="" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!-- 3rd section -->
+                     <div class="col-lg-4 col-md-6">
+                        <div class="form-group row">
+                            <label class="col-md-6 text-md-left text-lg-right col-form-label pr-md-0" for="">営業担当者</label>
+                            <div class="col-md-6 ">
+                                <input class="form-control" type="text" value="" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3rd section end -->
+                    <div class="col-md-12 text-lg-right">
+                        <button type="submit" class="btn btn-primary">検索</button>
+                        <button class="btn btn-secondary">新規登録</button>
+                    </div>
+                  </div>
+                </form>
+
+            </div>
+            <div class="global-padding">
+                <h4 class="h6"><strong>検索結果 :</strong></h4>
+                <table id="myTable" class="rtable tablesorter rtable-blue">
+                    <thead>
+                        <tr>
+                            <th class="sorting_desc">オーナー番号</th>
+                            <th class="sorting">区分</th>
+                            <th class="sorting">屋号/法人名</th>
+                            <th class="sorting">屋/法カナ</th>
+                            <th class="sorting">代表者名</th>
+                            <th class="sorting">ステータス</th>
+                            <th class="sorting">都道府県</th>
+                            <th class="sorting">代表電話番号</th>
+                            <th class="sorting">代表メールアドレ</th>
+                            <th class="sorting">営業担当者</th>
+                            <th class="sorting">アクション</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1234547</td>
+                            <td>開業中</td>
+                            <td>個人</td>
+                            <td>ABC Parking</td>
+                            <td>BCD Parking</td>
+                            <td>Mitarai Hiroshi</td>
+                            <td>Tokyo</td>
+                            <td>01716612345</td>
+                            <td>park@earth.com</td>
+                            <td>Winnie</td>
+                            <td>
+                                <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> /
+                                <a href="javascript:;" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1234548</td>
+                            <td>解約</td>
+                            <td>法人</td>
+                            <td>ABC Parking</td>
+                            <td>BCD Parking</td>
+                            <td>Mitarai Hiroshi</td>
+                            <td>Kanagawa</td>
+                            <td>01716612345</td>
+                            <td>park@earth.com</td>
+                            <td>Lilah</td>
+                            <td>
+                                <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> /
+                                <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1234549</td>
+                            <td>開業中</td>
+                            <td>個人</td>
+                            <td>ABC Parking</td>
+                            <td>BCD Parking</td>
+                            <td>Mitarai Hiroshi</td>
+                            <td>Fukuoka</td>
+                            <td>01716612345</td>
+                            <td>park@earth.com</td>
+                            <td>Esteban</td>
+                            <td>
+                                <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> /
+                                <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1234550</td>
+                            <td>解約</td>
+                            <td>法人</td>
+                            <td>ABC Parking</td>
+                            <td>BCD Parking</td>
+                            <td>Mitarai Hiroshi</td>
+                            <td>Okinawa</td>
+                            <td>01716612345</td>
+                            <td>park@earth.com</td>
+                            <td>Daylon</td>
+                            <td>
+                                <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> /
+                                <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1234551</td>
+                            <td>ブロック</td>
+                            <td>法人</td>
+                            <td>ABC Parking</td>
+                            <td>BCD Parking</td>
+                            <td>Mitarai Hiroshi</td>
+                            <td>Ibaragi</td>
+                            <td>01716612345</td>
+                            <td>park@earth.com</td>
+                            <td>Giorgio</td>
+                            <td>
+                                <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> /
+                                <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1234552</td>
+                            <td>開業中</td>
+                            <td>個人</td>
+                            <td>ABC Parking</td>
+                            <td>BCD Parking</td>
+                            <td>Mitarai Hiroshi</td>
+                            <td>Tokyo</td>
+                            <td>01716612345</td>
+                            <td>park@earth.com</td>
+                            <td>Fiora</td>
+                            <td>
+                                <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> /
+                                <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1234553</td>
+                            <td>解約</td>
+                            <td>法人</td>
+                            <td>ABC Parking</td>
+                            <td>BCD Parking</td>
+                            <td>Mitarai Hiroshi</td>
+                            <td>Fukuoka</td>
+                            <td>01716612345</td>
+                            <td>park@earth.com</td>
+                            <td>Willa</td>
+                            <td>
+                                <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> /
+                                <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1234554</td>
+                            <td>ブロック</td>
+                            <td>個人</td>
+                            <td>ABC Parking</td>
+                            <td>BCD Parking</td>
+                            <td>Mitarai Hiroshi</td>
+                            <td>Tokyo</td>
+                            <td>01716612345</td>
+                            <td>park@earth.com</td>
+                            <td>Niklaus</td>
+                            <td>
+                                <a href="javascript:;" title="詳細" class="btn btn-sm btn-link">詳細</a> /
+                                <a href="#" title="駐車場一覧" class="btn btn-sm btn-link">駐車場一覧</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">Previous</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">Next</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            <div>
+                Copyright Earthcar &copy; 2016-2017. All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+
+    <!--build:js js/main.min.js -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- <script src="js/datatables.min.js"></script> -->
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

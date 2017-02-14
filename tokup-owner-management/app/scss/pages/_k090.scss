@@ -1,0 +1,70 @@
+.search-panel-section {
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+    // background-color: #f2f0f0;
+    
+    .card{
+      @extend .col-md-6;
+      @extend .col-sm-10;
+      border: none;
+      border-radius: 0 ;
+      background: #e8f1f4;  
+      nav{
+        @extend .card-header;
+        @extend .p-0; 
+        background: #349be0;
+        box-shadow: -1px 6px 6px -6px rgba(0,0,0,.35);
+        .nav-link{
+          border-radius: 0;
+          color: $white;
+          @include rem("font-size" , 14px);
+          &.active{
+            background-color: darken(#349be0, 10);
+          }  
+        }
+      }
+    }
+    .basic-search{
+
+      margin: 0 auto;
+      display: block;  
+      .form-group{
+        @extend .row;
+        @extend .ml-sm-0;
+        .col-form-label{
+          @extend .col-lg-3;
+          @extend .col-md-4;
+          @extend .col-sm-4;
+          font-weight:bold;
+          @extend .pr-md-0;
+          background: $white;
+          
+        }
+        .input-space{
+          @extend .col-lg-9;
+          @extend .col-md-8;
+          @extend .col-sm-8;
+          @extend .pl-md-0;
+          .form-control{
+            @extend .form-control-sm;
+            border-radius: 0 ;
+            border: 1px solid transparent;
+            border-left-color: #349be0; 
+            &:hover{
+              border: 1px solid #349be0;
+            }
+          }
+        }
+      }
+    }
+
+
+
+    // fieldset {
+    //     float: left;
+    //     width: calc(100% / 4);
+    // }
+    label {
+      @include rem('font-size', 12px);
+    }
+  }
