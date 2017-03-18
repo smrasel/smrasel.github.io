@@ -335,3 +335,25 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+#subheader {
+  background: rgba(0,0,0,.5);
+}
+.pagination-lg>li>a, 
+.pagination-lg>li>span {
+  font-size: 20px;
+}
+.showMap {
+  display: none;
+}
+
+a:hover + .showMap {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 90%;
+  height: 270px;
+  background-color: #f60;
+  z-index: 999;
+  width: 300px;
+  right: 16px;
+}
