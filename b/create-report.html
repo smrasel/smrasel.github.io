@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Create report!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+  <div class="app_container">
+    <div class="aside_container">
+      <aside class="menu">
+        <p class="menu-label">
+          General
+        </p>
+        <ul class="menu-list">
+          <li><a href="dashboard.html"><i class="material-icons">dashboard</i> Dashboard</a></li>
+          <li><a href="leaderboard.html"><i class="material-icons">trending_up</i> Leaderboard</a></li>
+        </ul>
+        <p class="menu-label">
+          Main
+        </p>
+        <ul class="menu-list">
+          <li><a><i class="material-icons">group_work</i> Programs</a></li>
+          <li>
+            <a href="javascript:;" class="is-active"><i class="material-icons">bug_report</i> Manage Reports</a>
+            <ul>
+              <li><a>Draft</a></li>
+              <li><a>Pending</a></li>
+              <li><a>Dispute</a></li>
+              <li><a>Accept</a></li>
+              <li><a>Reject</a></li>
+            </ul>
+          </li>
+        </ul>
+        <p class="menu-label">Settings</p>
+        <ul class="menu-list">
+          <li><a href="profile.html"><i class="material-icons">account_circle</i>  Profile</a></li>
+          <li><a href="payment_method.html"><i class="material-icons">payment</i> Payment Method</a></li>
+          <li><a href="change_password.html"><i class="material-icons">fingerprint</i> Change Password</a></li>
+        </ul>
+      </aside>
+    </div>
+    <div class="main_container">
+      <div id="main_header">
+        <div class="brand-logo">
+          <img src="images/beetle_logo.png" alt="" width="72">
+          <span class="top">BEETLES</span>
+          <span>THE HACKER'S APPROACH</span>
+        </div>
+        <div class="global-cta-new-report">
+          <a href="create-report.html" class="button is-primary" disabled><i class="material-icons">bug_report</i> Create new report</a>
+        </div>
+        <div class="link-profile-compact-wrpper">
+          <!-- It will redirect to profile page -->
+          <a href="javascript:;" class="link-profile-compact">
+            <div>
+              <div class="name">S M Rasel Mahamud Rony</div>
+              <div class="email">raselux@gmail.com</div>
+            </div>
+            <div class="profile-pic" style="background-image: url('images/Rob-Hunter.gif');"></div>
+          </a>
+        </div>
+        <div class="exit">
+          <!-- it will sign out from the app and colse the app tab -->
+          <a href="javascript:;" class="cta-btn"><i class="material-icons">power_settings_new</i></a>
+        </div>
+      </div>
+      <div id="main_body">
+
+
+
+        <div class="form-container">
+          <div class="section">
+            <div class="container">
+              <div class="columns">
+            <div class="column">
+              <div class="form-info">
+                <h3 class="pro-title">Create new report / vulnerability!</h3>
+                <form action="">
+                  <div class="account-field">
+                    <div class="input-field-full-length">
+                      <label for="" class="label">Caption or Title <span class="label-helper">Help us get an idea of what this vulnerability or report is about</span></label>
+                      
+                      <p class="control">
+                        <input type="text" class="input is-large is-danger" placeholder="A summary of your submission">
+                        <span class="help is-danger">This field is required</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="account-field m-b-20">
+                    <div class="input-field">
+                      <label for="" class="label">Programs</label>
+                      
+                      <p class="control">
+                        <span class="select">
+                          <select>
+                            <option>Select programs</option>
+                            <option>Programs 1</option>
+                            <option>Programs 2</option>
+                          </select>
+                        </span>
+                      </p>
+                    </div>
+                    <div class="input-field">
+                      <label for="" class="label">Category</label>
+                      
+                      <p class="control">
+                        <span class="select">
+                          <select>
+                            <option>Select Category</option>
+                            <option>Programs 1</option>
+                            <option>Programs 2</option>
+                          </select>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="account-field">
+                    <div class="input-field-full-length">
+                      <label for="" class="label">URL / Location of vulnerability</label>
+                      <p class="control">
+                        <input type="url" class="input is-large" placeholder="https://secure.server.com/some/path/file.php" autocomplete="off">
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="account-field ">
+                    <div class="input-field-full-length">
+                      <label for="" class="label">Description <span class="label-helper">Describe the vulnerability, and provide a Proof of Concept. How would you fix it?</span></label>
+                      <p class="control">
+                        <textarea class="textarea" placeholder="What is the vulnerability?
+
+What is security impact?
+
+Replication Steps:
+1. Press the button
+2. Enter `xxx` into the input
+3. Boom
+
+Proof of Concept:" rows="12" required></textarea>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="account-field">
+                    <div class="input-field-full-length">
+                      <label for="" class="label">Security impact</label>
+                      <p class="control">
+                        <textarea placeholder="What is security impact?" class="textarea" required></textarea>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="account-field m-b-20">
+                    <div class="input-field-full-length">
+                      <label for="" class="label">Trace dump/HTTP request</label>
+                      <p class="control">
+                        <textarea rows="11" placeholder="POST /foo.html HTTP/1.1
+Host: secure.target.com
+User-Agent: Mozilla/5.0 (FakeOS 1.1; x64; rv:122.1) Gecko/20100101 Firefox/22.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Referer: http://secure.target.com/foo.html?display=login                                             
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded                                                      
+Content-Length: 216" class="textarea" required></textarea>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="account-field">
+                    <div class="input-field-full-length">
+                      <label for="" class="label">Any additional information?</label>
+                      <p class="control">
+                        <textarea class="textarea" placeholder="Any additional information or data you'd like us to know about this submission." rows="4"></textarea>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="account-field m-b-20">
+                    <div class="input-field-full-length">
+                      <label for="" class="label">Recomended Fix</label>
+                      <p class="control">
+                        <textarea class="textarea" placeholder="Any recomended fix you'd like us to know about this submission." rows="4"></textarea>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="account-field m-b-20">
+                    <div class="input-field-full-length">
+                      <label for="submission_submission_files_file" class="label">Attach File <span class="label-helper">You can attach multiple files (Using Shift+Click, Control+Click, etc.). Uploads will fail if request time takes longer than ~30 seconds. Please keep combined upload size &lt; 2MB.</span></label>
+                      <p class="control">
+                        <input multiple="multiple" type="file" id="submission_submission_files_file">  
+                      </p>
+                    </div>  
+                  </div>
+                  <div class="cvss-calculation">
+                    <label class="label m-b-20">CVSS Calculation <span class="label-helper">We use CVSS 2.0 for calculating report severity</span></label>
+                    <div class="account-field m-b-20">
+                      <div class="input-field">
+                        <label for="" class="label">Access Vector</label>
+                        <p class="control">
+                          <label class="radio">
+                            <input type="radio" name="accessVector">
+                            Local
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="accessVector">
+                            Adjacent
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="accessVector">
+                            Network
+                          </label>
+                        </p>
+                      </div>
+
+                      <div class="input-field">
+                        <label for="" class="label">Access Complexity</label>
+                        <p class="control">
+                          <label class="radio">
+                            <input type="radio" name="accessComplexity">
+                            High
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="accessComplexity">
+                            Medium
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="accessComplexity">
+                            Low
+                          </label>
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div class="account-field m-b-20">
+                      <div class="input-field">
+                        <label for="" class="label">Authentication Type</label>
+                        <p class="control">
+                          <label class="radio">
+                            <input type="radio" name="authenticationType">
+                            Multiple
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="authenticationType">
+                            Single
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="authenticationType">
+                            None
+                          </label>
+                        </p>
+                      </div>
+
+                      <div class="input-field">
+                        <label for="" class="label">Confidentiality Impact</label>
+                        <p class="control">
+                          <label class="radio">
+                            <input type="radio" name="confidentialityImpact">
+                            None
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="confidentialityImpact">
+                            Partial
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="confidentialityImpact">
+                            Complete
+                          </label>
+                        </p>
+                      </div>
+                    </div>
+
+
+                    <div class="account-field">
+                      <div class="input-field">
+                        <label for="" class="label">Integrity Impact</label>
+                        <p class="control">
+                          <label class="radio">
+                            <input type="radio" name="integrityImpact">
+                            None
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="integrityImpact">
+                            Partial
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="integrityImpact">
+                            Complete
+                          </label>
+                        </p>
+                      </div>
+
+                      <div class="input-field">
+                        <label for="" class="label">Availability Impact</label>
+                        <p class="control">
+                          <label class="radio">
+                            <input type="radio" name="availabilityImpact">
+                            High
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="availabilityImpact">
+                            Medium
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="availabilityImpact">
+                            Low
+                          </label>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  
+                  <button type="submit" class="button is-primary is-medium is-outlined is-block">Save as Draft</button>
+                  <button type="submit" class="button is-primary is-medium is-outlined is-block">Preview Report</button>
+                  <button type="submit" class="button is-primary is-medium is-block">Submit Report</button>
+                </form>
+              </div>
+            </div>
+            <div class="column is-one-third">
+              <article class="message is-success sidebar">
+                <div class="message-body sidebar-widget">
+                  <h3><i class="material-icons">info</i> Instructions</h3>
+                  <ol>
+                    <li>Please read program description and scope information before submitting the report. Invalid and low
+                      priority
+                      issues may reduce your future possibilities to get invited.
+                    </li>
+                    <li>Use precise reproduction steps.</li>
+                    <li>Use HTTP Request dump if possible</li>
+                    <li>You can save your reports progress by pressing <code>CONTROL + S </code></li>
+                    <li>We use CVSS 2.0 for calculating report severity</li>
+                    <li>Contact your project leader if you are not sure about your finding.</li>
+                  </ol>
+                </div>
+              </article>
+            </div>
+          </div>
+            </div>
+          </div>
+          
+
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

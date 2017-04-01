@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+  <div class="app_container">
+    
+    <div class="aside_container">
+      <aside class="menu">
+        <p class="menu-label">
+          General
+        </p>
+        <ul class="menu-list">
+          <li><a href="javascript:;" class="is-active"><i class="material-icons">dashboard</i> Dashboard</a></li>
+          <li><a href="leaderboard.html"><i class="material-icons">trending_up</i> Leaderboard</a></li>
+        </ul>
+        <p class="menu-label">
+          Main
+        </p>
+        <ul class="menu-list">
+          <li><a><i class="material-icons">group_work</i> Programs</a></li>
+          <li>
+            <a href="javascript:;"><i class="material-icons">bug_report</i> Manage Reports</a>
+            <ul>
+              <li><a>Draft</a></li>
+              <li><a>Pending</a></li>
+              <li><a>Dispute</a></li>
+              <li><a>Accept</a></li>
+            </ul>
+          </li>
+        </ul>
+        <p class="menu-label">Settings</p>
+        <ul class="menu-list">
+          <li><a href="profile.html"><i class="material-icons">account_circle</i>  Profile</a></li>
+          <li><a href="payment_method.html"><i class="material-icons">payment</i> Payment Method</a></li>
+          <li><a href="change_password.html"><i class="material-icons">fingerprint</i> Change Password</a></li>
+        </ul>
+      </aside>
+    </div>
+    
+    <div class="main_container">
+      <div id="main_header">
+        <div class="brand-logo">
+          <img src="images/beetle_logo.png" alt="" width="72">
+          <span class="top">BEETLES</span>
+          <span>THE HACKER'S APPROACH</span>
+        </div>
+        <div class="global-cta-new-report">
+          <a href="create-report.html" class="button is-primary"><i class="material-icons">bug_report</i> Create new report</a>
+        </div>
+        <div class="link-profile-compact-wrpper">
+          <!-- It will redirect to profile page -->
+          <a href="javascript:;" class="link-profile-compact">
+            <div>
+              <div class="name">S M Rasel Mahamud Rony</div>
+              <div class="email">raselux@gmail.com</div>
+            </div>
+            <div class="profile-pic" style="background-image: url('images/Rob-Hunter.gif');"></div>
+          </a>
+        </div>
+        <div class="exit">
+          <!-- it will sign out from the app and colse the app tab -->
+          <a href="javascript:;" class="cta-btn"><i class="material-icons">power_settings_new</i></a>
+        </div>
+      </div>
+      <div id="main_body">
+        <div class="wrapper-container">
+          <table class="table table is-striped">
+            <thead>
+              <tr>
+                <th><abbr title="Position">ID</abbr></th>
+                <th>Programs</th>
+                <th>Status</th>
+                <th><abbr title="Researcher">Researcher Name</abbr></th>
+                <th>Report Name</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th><abbr title="Position">ID</abbr></th>
+                <th>Programs</th>
+                <th>Status</th>
+                <th><abbr title="Researcher">Researcher Name</abbr></th>
+                <th>Report Name</th>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td><a href="#">HR Management System</a>
+                </td>
+                <td><span class="tag is-success">Accepted</span></td>
+                <td>Shahriyar's</td>
+                <td>report of <a href="#">Cross-site scripting (XSS)/Non-Persistent XSS.</a></td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td><a href="#">HR Management System</a>
+                </td>
+                <td><span class="tag is-danger">Rejected</span></td>
+                <td>Shahriyar's</td>
+                <td>report of <a href="#">Authorization/Permissions/Insecure Direct Object Reference.</a></td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td><a href="#">HR Management System</a>
+                </td>
+                <td><span class="tag is-warning">Pending</span></td>
+                <td>Shahriyar's</td>
+                <td>report of <a href="#">Authorization/Permissions/Access/Privacy Control Violation.</a></td>
+              </tr>
+              
+              </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </body>
+  </html>
