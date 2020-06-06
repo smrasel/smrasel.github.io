@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <linearGradient x1="0%" y1="122.099776%" x2="99.9999913%" y2="122.099776%" id="linearGradient-1">
+            <stop stop-color="#7CF3A7" stop-opacity="0.102" offset="0%"></stop>
+            <stop stop-color="#7CF3A7" stop-opacity="0.302" offset="22%"></stop>
+            <stop stop-color="#7CF3A7" offset="53%"></stop>
+            <stop stop-color="#73EAA5" offset="62%"></stop>
+            <stop stop-color="#5CD3A1" offset="76%"></stop>
+            <stop stop-color="#35AD9A" offset="94%"></stop>
+            <stop stop-color="#28A098" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="-20.4998827%" x2="0%" y2="-20.4998827%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFEEF1" stop-opacity="0.078" offset="1%"></stop>
+            <stop stop-color="#FFE1E6" stop-opacity="0.149" offset="2%"></stop>
+            <stop stop-color="#FFD8DE" stop-opacity="0.2" offset="4%"></stop>
+            <stop stop-color="#FFD2D9" stop-opacity="0.22" offset="6%"></stop>
+            <stop stop-color="#FFD1D8" stop-opacity="0.231" offset="12%"></stop>
+            <stop stop-color="#FFA7B4" stop-opacity="0.412" offset="23%"></stop>
+            <stop stop-color="#FF3353" stop-opacity="0.412" offset="38%"></stop>
+            <stop stop-color="#FF3353" stop-opacity="0.569" offset="53%"></stop>
+            <stop stop-color="#F8932C" stop-opacity="0.898" offset="75%"></stop>
+            <stop stop-color="#F1FF00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(0.000000, -0.000000)" fill-rule="nonzero">
+            <path d="M2.74297,11.9451 C3.35627,11.9257 3.95899,12.1081 4.45856,12.4645 C4.95812,12.8209 5.32689,13.3314 5.50822,13.9178 C5.88317,9.05498 9.98949,5.45977 14.9857,5.45977 C17.4809,5.45683 19.877,6.436 21.6562,8.18566 C23.4355,9.93533 24.455,12.315 24.4944,14.8103 C24.5007,15.5405 24.7968,16.2383 25.3174,16.7502 C25.8381,17.2621 26.5408,17.5461 27.2709,17.5399994 C28.001,17.5336 28.6986,17.2374 29.2104,16.7166 C29.7222,16.1958 30.0062,15.493 30.0000026,14.7628 L30.0000026,14.7628 C29.9865,12.815 29.5871,10.8892 28.825,9.09673 C28.0629,7.30423 26.9532,5.6806 25.5599,4.3197 C22.7436,1.54037 18.9427,-0.0123928995 14.9863,0 C7.02051,0 0.484524,5.93792 0.00146484,13.7221 C0.229039,13.1862 0.611708,12.7306 1.10026,12.4139 C1.58881,12.0972 2.1609,11.934 2.74297,11.9451 L2.74297,11.9451 Z" id="Path" fill="url(#linearGradient-1)"></path>
+            <path d="M27.2563,18.058 C26.6432,18.0773 26.0407,17.8947 25.5414,17.5383 C25.042,17.182 24.6735,16.6715 24.4923,16.0853 C24.1174,20.9481 20.011,24.5433 15.0136,24.5433 C12.5189,24.546 10.1234,23.5669 8.34448,21.8177 C6.56554,20.0685 5.54601,17.6895 5.50613,15.1947 C5.48224,14.4763 5.17852,13.7957 4.65982,13.2981 C4.14112,12.8006 3.44853,12.5256 2.7299,12.5316974 C2.01126,12.538 1.32351,12.8249 0.813469,13.3313 C0.303427,13.8377 0.0114979,14.5235 0,15.2422 C0.0141975,17.1892 0.413997,19.1142 1.1763,20.9058 C1.9386,22.6974 3.0483,24.3201 4.44127,25.6803 C7.25709,28.46 11.0579,30.0128 15.0142,29.9999797 C22.9813,29.9999797 29.5122,24.0621 29.9991,16.2779 C29.7717,16.8145 29.3891,17.2708 28.9003,17.5881 C28.4114,17.9053 27.8389,18.069 27.2563,18.058 L27.2563,18.058 Z" id="Path" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>
